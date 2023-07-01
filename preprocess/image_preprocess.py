@@ -21,7 +21,7 @@ def noise_removal(image):
 
         # Thicker the text
         kernel = np.ones((2, 2), np.uint8)
-        im_bw = cv2.erode(im_bw, kernel, iterations=2)
+        im_bw = cv2.erode(im_bw, kernel, iterations=1)
 
         print("Noise removal done.")
 

@@ -1,11 +1,14 @@
 from image_preprocess import noise_removal, enhance_image
 import pytesseract
 import cv2
-import re
+import numpy as np
 import os
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
-from deskew import deskew
+# import boto3
+
+# client = boto3.client('textract', region_name='us-east-1',
+#                       aws_access_key_id='AKIAX6OYNK5DNPIPD72V', aws_secret_access_key='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')
 
 
 def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path):
@@ -35,6 +38,18 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
         # # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
             nonoise_image, lang='vie', config='--oem 1 --psm 3')
+        # bytes_test = cv2.imencode('.png', nonoise_image)[1].tobytes()
+        # response = client.analyze_document(
+        #     Document={'Bytes': bytes_test}, FeatureTypes=['TABLES'])
+
+        # blocks = response['Blocks']
+        # extracted_text = ""
+        # for block in blocks:
+        #     if block['BlockType'] == 'WORD':
+        #         extracted_text += block['Text'] + " "
+        #     # text formation based upon Line block type
+        #     elif block['BlockType'] == 'LINE':
+        #         extracted_text += block['Text'] + " "
 
         # Remove newline characters, punctuation, and unnecessary characters
         # extracted_text = re.sub(r'\n', ' ', extracted_text)
@@ -46,6 +61,20 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
             text_file.write(extracted_text)
     except Exception as e:
         return print("Error in preprocess_page: ", e)
+
+
+def get_kv_map(blocks):
+    key_map = {}
+    value_map = {}
+    block_map = {}
+    for block in blocks:
+        block_id = block['Id']
+        block_map[block_id] = block
+        if block['BlockType'] == "KEY_VALUE_SET" and 'KEY' in block['EntityTypes']:
+            key_map[block_id] = block
+        else:
+            value_map[block_id] = block
+    return key_map, value_map, block_map
 
 
 def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):

@@ -6,13 +6,13 @@ import shutil
 
 
 # Set up the directories
-raw_pdf_dir = "/Users/nitieii/LNT + MRB Sharing Dropbox/CP05"
+raw_pdf_dir = "/Users/nitieii/LNT + MRB Sharing Dropbox/PIC"
 processed_pdf_dir = "preprocess/processed_pdf"
 extracted_text_dir = "preprocess/extracted_pdf"
 
-# remove the directories if they exist
-shutil.rmtree(processed_pdf_dir)
-shutil.rmtree(extracted_text_dir)
+# # remove the directories if they exist
+# shutil.rmtree(processed_pdf_dir)
+# shutil.rmtree(extracted_text_dir)
 
 # Create the directories if they don't exist
 os.makedirs(processed_pdf_dir, exist_ok=True)
