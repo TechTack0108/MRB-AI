@@ -1,0 +1,962 @@
+[
+    {
+        "label": "ORG",
+        "pattern": "ACR"
+    },
+    {
+        "label": "ORG",
+        "pattern": "MRB"
+    },
+    {
+        "label": "ORG",
+        "pattern": "MRR"
+    },
+    {
+        "label": "ORG",
+        "pattern": "HUG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "PMG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "EVN"
+    },
+    {
+        "label": "ORG",
+        "pattern": "PIC"
+    },
+    {
+        "label": "ORG",
+        "pattern": "HNC"
+    },
+    {
+        "label": "ORG",
+        "pattern": "CSL"
+    },
+    {
+        "label": "ORG",
+        "pattern": "SIG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "UJV"
+    },
+    {
+        "label": "ORG",
+        "pattern": "MLT"
+    },
+    {
+        "label": "ORG",
+        "pattern": "IMP"
+    },
+    {
+        "label": "ORG",
+        "pattern": "PSD"
+    },
+    {
+        "label": "ORG",
+        "pattern": "WGO"
+    },
+    {
+        "label": "ORG",
+        "pattern": "BRG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "EHS"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Viettel"
+    },
+    {
+        "label": "ORG",
+        "pattern": "VNPT"
+    },
+    {
+        "label": "ORG",
+        "pattern": "E&Y"
+    },
+    {
+        "label": "ORG",
+        "pattern": "TEC"
+    },
+    {
+        "label": "ORG",
+        "pattern": "TTS"
+    },
+    {
+        "label": "ORG",
+        "pattern": "RSK"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ricoh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "SYSTRA"
+    },
+    {
+        "label": "ORG",
+        "pattern": "HANCORP"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hyundai"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ghella"
+    },
+    {
+        "label": "ORG",
+        "pattern": "LISOCON"
+    },
+    {
+        "label": "ORG",
+        "pattern": "URENCO"
+    },
+    {
+        "label": "ORG",
+        "pattern": "EVN BA DINH"
+    },
+    {
+        "label": "ORG",
+        "pattern": "EVN BAC TU LIEM"
+    },
+    {
+        "label": "ORG",
+        "pattern": "SAO VANG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "CHUNG THANH AN"
+    },
+    {
+        "label": "ORG",
+        "pattern": "BAC SONG HONG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "DEQ"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Viet Nhat"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hoang Gia"
+    },
+    {
+        "label": "ORG",
+        "pattern": "T&C SIG"
+    },
+    {
+        "label": "ORG",
+        "pattern": "B\u1ed8 X\u00c2Y D\u1ef0NG T\u1ed4NG C\u00d4NG TY X\u00c2Y D\u1ef0NG H\u00c0 N\u1ed8I - CTCP"
+    },
+    {
+        "label": "ORG",
+        "pattern": "acr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Acr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the acr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Acr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(ACR)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "mrb"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Mrb"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the mrb"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Mrb"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(MRB)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "mrr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Mrr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the mrr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Mrr"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(MRR)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "hug"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hug"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the hug"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Hug"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(HUG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "pmg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Pmg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the pmg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Pmg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(PMG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "evn"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Evn"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the evn"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Evn"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(EVN)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "pic"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Pic"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the pic"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Pic"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(PIC)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "hnc"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hnc"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the hnc"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Hnc"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(HNC)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "csl"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Csl"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the csl"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Csl"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(CSL)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(SIG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "ujv"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ujv"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the ujv"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Ujv"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(UJV)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "mlt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Mlt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the mlt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Mlt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(MLT)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "imp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Imp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the imp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Imp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(IMP)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "psd"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Psd"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the psd"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Psd"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(PSD)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "wgo"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Wgo"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the wgo"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Wgo"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(WGO)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "brg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Brg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the brg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Brg"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(BRG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "ehs"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ehs"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the ehs"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Ehs"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(EHS)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "viettel"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Viettel"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the viettel"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Viettel"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Viettel)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "vnpt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Vnpt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the vnpt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Vnpt"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(VNPT)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "e&y"
+    },
+    {
+        "label": "ORG",
+        "pattern": "E&Y"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the e&y"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the E&Y"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(E&Y)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "tec"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Tec"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the tec"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Tec"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(TEC)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "tts"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Tts"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the tts"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Tts"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(TTS)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "rsk"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Rsk"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the rsk"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Rsk"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(RSK)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "ricoh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ricoh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the ricoh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Ricoh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Ricoh)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "systra"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Systra"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the systra"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Systra"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(SYSTRA)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "hancorp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hancorp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the hancorp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Hancorp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(HANCORP)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "hyundai"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hyundai"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the hyundai"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Hyundai"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Hyundai)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "ghella"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Ghella"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the ghella"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Ghella"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Ghella)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "lisocon"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Lisocon"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the lisocon"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Lisocon"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(LISOCON)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "urenco"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Urenco"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the urenco"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Urenco"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(URENCO)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "evn ba dinh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Evn Ba Dinh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the evn ba dinh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Evn Ba Dinh"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(EVN BA DINH)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "evn bac tu liem"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Evn Bac Tu Liem"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the evn bac tu liem"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Evn Bac Tu Liem"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(EVN BAC TU LIEM)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "sao vang"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Sao Vang"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the sao vang"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Sao Vang"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(SAO VANG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "chung thanh an"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Chung Thanh An"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the chung thanh an"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Chung Thanh An"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(CHUNG THANH AN)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "bac song hong"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Bac Song Hong"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the bac song hong"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Bac Song Hong"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(BAC SONG HONG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "deq"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Deq"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the deq"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Deq"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(DEQ)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "viet nhat"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Viet Nhat"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the viet nhat"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Viet Nhat"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Viet Nhat)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "hoang gia"
+    },
+    {
+        "label": "ORG",
+        "pattern": "Hoang Gia"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the hoang gia"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the Hoang Gia"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(Hoang Gia)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "t&c sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "T&C Sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the t&c sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the T&C Sig"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(T&C SIG)"
+    },
+    {
+        "label": "ORG",
+        "pattern": "b\u1ed9 x\u00e2y d\u1ef1ng t\u1ed5ng c\u00f4ng ty x\u00e2y d\u1ef1ng h\u00e0 n\u1ed9i - ctcp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "B\u1ed9 X\u00e2y D\u1ef1ng T\u1ed5ng C\u00f4ng Ty X\u00e2y D\u1ef1ng H\u00e0 N\u1ed9i - Ctcp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the b\u1ed9 x\u00e2y d\u1ef1ng t\u1ed5ng c\u00f4ng ty x\u00e2y d\u1ef1ng h\u00e0 n\u1ed9i - ctcp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "the B\u1ed9 X\u00e2y D\u1ef1ng T\u1ed5ng C\u00f4ng Ty X\u00e2y D\u1ef1ng H\u00e0 N\u1ed9i - Ctcp"
+    },
+    {
+        "label": "ORG",
+        "pattern": "(B\u1ed8 X\u00c2Y D\u1ef0NG T\u1ed4NG C\u00d4NG TY X\u00c2Y D\u1ef0NG H\u00c0 N\u1ed8I - CTCP)"
+    }
+]

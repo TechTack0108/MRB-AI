@@ -3,10 +3,10 @@ import os
 from PyPDF2 import PdfReader
 from pdf_preprocess import preprocess_pdf
 import shutil
-
+from memory_profiler import profile
 
 # Set up the directories
-raw_pdf_dir = "/Users/nitieii/LNT + MRB Sharing Dropbox/PIC"
+raw_pdf_dir = "/Users/nitieii/LNT + MRB Sharing Dropbox/CP09"
 processed_pdf_dir = "preprocess/processed_pdf"
 extracted_text_dir = "preprocess/extracted_pdf"
 
@@ -18,13 +18,16 @@ extracted_text_dir = "preprocess/extracted_pdf"
 os.makedirs(processed_pdf_dir, exist_ok=True)
 os.makedirs(extracted_text_dir, exist_ok=True)
 
-
 start_time = time.time()
 
 for root, dirs, files in os.walk(raw_pdf_dir):
     for file in files:
-        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected
-        if file.endswith(".pdf") and os.stat(os.path.join(root, file)).st_size != 0 and not file.startswith('.') and not os.path.exists(os.path.join(processed_pdf_dir, os.path.splitext(file)[0])) and not os.path.exists(os.path.join(extracted_text_dir, os.path.splitext(file)[0])) and not PdfReader(open(os.path.join(root, file), 'rb')).is_encrypted:
+        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected, and the pdf is not color
+        if file.endswith(".pdf") and os.stat(os.path.join(root, file)).st_size != 0 and not file.startswith(
+                '.') and not os.path.exists(
+            os.path.join(processed_pdf_dir, os.path.splitext(file)[0])) and not os.path.exists(
+            os.path.join(extracted_text_dir, os.path.splitext(file)[0])) and not PdfReader(
+            open(os.path.join(root, file), 'rb')).is_encrypted:
             print(f"Processing {file}...")
             preprocess_pdf(os.path.join(root, file),
                            processed_pdf_dir, extracted_text_dir)
