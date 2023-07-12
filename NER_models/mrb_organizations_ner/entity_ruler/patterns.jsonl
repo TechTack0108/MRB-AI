@@ -17,17 +17,23 @@
 {"label":"ORG","pattern":"EHS"}
 {"label":"ORG","pattern":"Viettel"}
 {"label":"ORG","pattern":"VNPT"}
+{"label":"ORG","pattern":"MOBIFONE"}
 {"label":"ORG","pattern":"E&Y"}
 {"label":"ORG","pattern":"TEC"}
 {"label":"ORG","pattern":"TTS"}
 {"label":"ORG","pattern":"RSK"}
+{"label":"ORG","pattern":"PVI"}
 {"label":"ORG","pattern":"Ricoh"}
 {"label":"ORG","pattern":"SYSTRA"}
 {"label":"ORG","pattern":"HANCORP"}
+{"label":"ORG","pattern":"GHELLA"}
+{"label":"ORG","pattern":"HYUNDAI"}
 {"label":"ORG","pattern":"Hyundai"}
+{"label":"ORG","pattern":"Vietnhat"}
 {"label":"ORG","pattern":"Ghella"}
 {"label":"ORG","pattern":"LISOCON"}
 {"label":"ORG","pattern":"URENCO"}
+{"label":"ORG","pattern":"AN LOI"}
 {"label":"ORG","pattern":"EVN BA DINH"}
 {"label":"ORG","pattern":"EVN BAC TU LIEM"}
 {"label":"ORG","pattern":"SAO VANG"}
@@ -36,7 +42,16 @@
 {"label":"ORG","pattern":"DEQ"}
 {"label":"ORG","pattern":"Viet Nhat"}
 {"label":"ORG","pattern":"Hoang Gia"}
+{"label":"ORG","pattern":"Gianglinh"}
+{"label":"ORG","pattern":"SHVN"}
+{"label":"ORG","pattern":"THU DO"}
 {"label":"ORG","pattern":"T&C SIG"}
+{"label":"ORG","pattern":"INTERWAY"}
+{"label":"ORG","pattern":"HOANG GIA"}
+{"label":"ORG","pattern":"ADECCO"}
+{"label":"ORG","pattern":"DTH POST"}
+{"label":"ORG","pattern":"Manpower"}
+{"label":"ORG","pattern":"Viettam"}
 {"label":"ORG","pattern":"B\u1ed8 X\u00c2Y D\u1ef0NG T\u1ed4NG C\u00d4NG TY X\u00c2Y D\u1ef0NG H\u00c0 N\u1ed8I - CTCP"}
 {"label":"ORG","pattern":"acr"}
 {"label":"ORG","pattern":"Acr"}
@@ -133,6 +148,11 @@
 {"label":"ORG","pattern":"the vnpt"}
 {"label":"ORG","pattern":"the Vnpt"}
 {"label":"ORG","pattern":"(VNPT)"}
+{"label":"ORG","pattern":"mobifone"}
+{"label":"ORG","pattern":"Mobifone"}
+{"label":"ORG","pattern":"the mobifone"}
+{"label":"ORG","pattern":"the Mobifone"}
+{"label":"ORG","pattern":"(MOBIFONE)"}
 {"label":"ORG","pattern":"e&y"}
 {"label":"ORG","pattern":"E&Y"}
 {"label":"ORG","pattern":"the e&y"}
@@ -153,6 +173,11 @@
 {"label":"ORG","pattern":"the rsk"}
 {"label":"ORG","pattern":"the Rsk"}
 {"label":"ORG","pattern":"(RSK)"}
+{"label":"ORG","pattern":"pvi"}
+{"label":"ORG","pattern":"Pvi"}
+{"label":"ORG","pattern":"the pvi"}
+{"label":"ORG","pattern":"the Pvi"}
+{"label":"ORG","pattern":"(PVI)"}
 {"label":"ORG","pattern":"ricoh"}
 {"label":"ORG","pattern":"Ricoh"}
 {"label":"ORG","pattern":"the ricoh"}
@@ -168,11 +193,26 @@
 {"label":"ORG","pattern":"the hancorp"}
 {"label":"ORG","pattern":"the Hancorp"}
 {"label":"ORG","pattern":"(HANCORP)"}
+{"label":"ORG","pattern":"ghella"}
+{"label":"ORG","pattern":"Ghella"}
+{"label":"ORG","pattern":"the ghella"}
+{"label":"ORG","pattern":"the Ghella"}
+{"label":"ORG","pattern":"(GHELLA)"}
+{"label":"ORG","pattern":"hyundai"}
+{"label":"ORG","pattern":"Hyundai"}
+{"label":"ORG","pattern":"the hyundai"}
+{"label":"ORG","pattern":"the Hyundai"}
+{"label":"ORG","pattern":"(HYUNDAI)"}
 {"label":"ORG","pattern":"hyundai"}
 {"label":"ORG","pattern":"Hyundai"}
 {"label":"ORG","pattern":"the hyundai"}
 {"label":"ORG","pattern":"the Hyundai"}
 {"label":"ORG","pattern":"(Hyundai)"}
+{"label":"ORG","pattern":"vietnhat"}
+{"label":"ORG","pattern":"Vietnhat"}
+{"label":"ORG","pattern":"the vietnhat"}
+{"label":"ORG","pattern":"the Vietnhat"}
+{"label":"ORG","pattern":"(Vietnhat)"}
 {"label":"ORG","pattern":"ghella"}
 {"label":"ORG","pattern":"Ghella"}
 {"label":"ORG","pattern":"the ghella"}
@@ -188,6 +228,11 @@
 {"label":"ORG","pattern":"the urenco"}
 {"label":"ORG","pattern":"the Urenco"}
 {"label":"ORG","pattern":"(URENCO)"}
+{"label":"ORG","pattern":"an loi"}
+{"label":"ORG","pattern":"An Loi"}
+{"label":"ORG","pattern":"the an loi"}
+{"label":"ORG","pattern":"the An Loi"}
+{"label":"ORG","pattern":"(AN LOI)"}
 {"label":"ORG","pattern":"evn ba dinh"}
 {"label":"ORG","pattern":"Evn Ba Dinh"}
 {"label":"ORG","pattern":"the evn ba dinh"}
@@ -228,11 +273,56 @@
 {"label":"ORG","pattern":"the hoang gia"}
 {"label":"ORG","pattern":"the Hoang Gia"}
 {"label":"ORG","pattern":"(Hoang Gia)"}
+{"label":"ORG","pattern":"gianglinh"}
+{"label":"ORG","pattern":"Gianglinh"}
+{"label":"ORG","pattern":"the gianglinh"}
+{"label":"ORG","pattern":"the Gianglinh"}
+{"label":"ORG","pattern":"(Gianglinh)"}
+{"label":"ORG","pattern":"shvn"}
+{"label":"ORG","pattern":"Shvn"}
+{"label":"ORG","pattern":"the shvn"}
+{"label":"ORG","pattern":"the Shvn"}
+{"label":"ORG","pattern":"(SHVN)"}
+{"label":"ORG","pattern":"thu do"}
+{"label":"ORG","pattern":"Thu Do"}
+{"label":"ORG","pattern":"the thu do"}
+{"label":"ORG","pattern":"the Thu Do"}
+{"label":"ORG","pattern":"(THU DO)"}
 {"label":"ORG","pattern":"t&c sig"}
 {"label":"ORG","pattern":"T&C Sig"}
 {"label":"ORG","pattern":"the t&c sig"}
 {"label":"ORG","pattern":"the T&C Sig"}
 {"label":"ORG","pattern":"(T&C SIG)"}
+{"label":"ORG","pattern":"interway"}
+{"label":"ORG","pattern":"Interway"}
+{"label":"ORG","pattern":"the interway"}
+{"label":"ORG","pattern":"the Interway"}
+{"label":"ORG","pattern":"(INTERWAY)"}
+{"label":"ORG","pattern":"hoang gia"}
+{"label":"ORG","pattern":"Hoang Gia"}
+{"label":"ORG","pattern":"the hoang gia"}
+{"label":"ORG","pattern":"the Hoang Gia"}
+{"label":"ORG","pattern":"(HOANG GIA)"}
+{"label":"ORG","pattern":"adecco"}
+{"label":"ORG","pattern":"Adecco"}
+{"label":"ORG","pattern":"the adecco"}
+{"label":"ORG","pattern":"the Adecco"}
+{"label":"ORG","pattern":"(ADECCO)"}
+{"label":"ORG","pattern":"dth post"}
+{"label":"ORG","pattern":"Dth Post"}
+{"label":"ORG","pattern":"the dth post"}
+{"label":"ORG","pattern":"the Dth Post"}
+{"label":"ORG","pattern":"(DTH POST)"}
+{"label":"ORG","pattern":"manpower"}
+{"label":"ORG","pattern":"Manpower"}
+{"label":"ORG","pattern":"the manpower"}
+{"label":"ORG","pattern":"the Manpower"}
+{"label":"ORG","pattern":"(Manpower)"}
+{"label":"ORG","pattern":"viettam"}
+{"label":"ORG","pattern":"Viettam"}
+{"label":"ORG","pattern":"the viettam"}
+{"label":"ORG","pattern":"the Viettam"}
+{"label":"ORG","pattern":"(Viettam)"}
 {"label":"ORG","pattern":"b\u1ed9 x\u00e2y d\u1ef1ng t\u1ed5ng c\u00f4ng ty x\u00e2y d\u1ef1ng h\u00e0 n\u1ed9i - ctcp"}
 {"label":"ORG","pattern":"B\u1ed9 X\u00e2y D\u1ef1ng T\u1ed5ng C\u00f4ng Ty X\u00e2y D\u1ef1ng H\u00e0 N\u1ed9i - Ctcp"}
 {"label":"ORG","pattern":"the b\u1ed9 x\u00e2y d\u1ef1ng t\u1ed5ng c\u00f4ng ty x\u00e2y d\u1ef1ng h\u00e0 n\u1ed9i - ctcp"}

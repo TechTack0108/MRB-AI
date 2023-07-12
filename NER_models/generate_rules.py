@@ -44,19 +44,21 @@ def generate_rules(patterns_data):
     ruler = nlp.add_pipe("entity_ruler")
     # noinspection PyUnresolvedReferences
     ruler.add_patterns(patterns_data)
-    nlp.to_disk("mrb_ref_no_ner")
+    nlp.to_disk("mrb_organizations_ner")
 
 
-# better_version = generate_better_organization_patterns(
-#     "../data/trained_data/organizations/mrb_organizations.json")
-
-# patterns = create_training_data(
-#     "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
+better_version = generate_better_organization_patterns(
+    "../data/trained_data/organizations/mrb_organizations.json")
 
 patterns = create_training_data(
-    "../data/trained_data/ref_no/mrb_ref_nums.json", "REF_NO")
+    "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
 
-save_data_json("../data/trained_data/ref_no/mrb_ref_nums_patterns.json", patterns)
+save_data_json("../data/trained_data/organizations/mrb_organizations_patterns.json", patterns)
+
+# patterns = create_training_data(
+#     "../data/trained_data/ref_no/mrb_ref_nums.json", "REF_NO")
+#
+# save_data_json("../data/trained_data/ref_no/mrb_ref_nums_patterns.json", patterns)
 
 # patterns = create_training_data(
 #     "../data/trained_data/date/mrb_dates.json", "DATE")

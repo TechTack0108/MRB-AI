@@ -4,6 +4,7 @@ import math
 
 from file_utils import load_data_txt, save_data_json
 
+nlp_orgs = spacy.load("mrb_organizations_ner")
 nlp_dates = spacy.load("mrb_dates_ner")
 nlp_refs = spacy.load("mrb_ref_no_ner")
 
@@ -67,6 +68,8 @@ try:
 except Exception as e:
     print("Error: ", e)
 
-save_data_json("../data/trained_data/ref_no/mrb_ref_nos_training_data.json", TRAIN_DATA)
+# save_data_json("../data/trained_data/ref_no/mrb_ref_nos_training_data.json", TRAIN_DATA)
+
+save_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json", TRAIN_DATA)
 
 print("count_files: ", count_files)

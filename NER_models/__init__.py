@@ -2,7 +2,7 @@ import spacy
 import os
 from file_utils import load_data_txt, save_data_txt
 
-nlp_ref = spacy.load("mrb_ref_nos_ner_model")
+nlp_ref = spacy.load("mrb_ref_no_ner_model")
 nlp_org = spacy.load("mrb_organizations_ner_model")
 nlp_date = spacy.load("mrb_dates_ner_model")
 
