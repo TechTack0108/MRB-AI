@@ -22,7 +22,8 @@ start_time = time.time()
 
 for root, dirs, files in os.walk(raw_pdf_dir):
     for file in files:
-        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected, and the pdf is not color
+        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected, and the pdf is
+        # not color
         if file.endswith(".pdf") and os.stat(os.path.join(root, file)).st_size != 0 and not file.startswith(
                 '.') and not os.path.exists(
             os.path.join(processed_pdf_dir, os.path.splitext(file)[0])) and not os.path.exists(

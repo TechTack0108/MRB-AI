@@ -1966,5 +1966,37 @@
     {
         "label": "REF_NO",
         "pattern": "PMG_MAR23_05_AN LOI"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "HGU-MTS-00187-23-B"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "HGU-MTS-00212-23-B"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "CSL-MLT-00024-23-E-V"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "UJV-MLT-00343-22-B-UJV_CP06-UJV"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "UJV-MLT-00400-21-B-UJV_CP06"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "UJV-MLT-00468-21-B-THA_CP06"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "HGU-MTS-00092-23-B"
+    },
+    {
+        "label": "REF_NO",
+        "pattern": "UJV-MLT-00367-21-B-RSK_CP06"
     }
 ]

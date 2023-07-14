@@ -1140,6 +1140,18 @@
         }
     ],
     [
+        "d) Contractor's report ref. HGU-MTS-00187-23-B dated 04 April 2023",
+        {
+            "entities": [
+                [
+                    28,
+                    46,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
         "53. PMG_JAN23_67_MOBIFONE (3)",
         {
             "entities": [
@@ -1753,6 +1765,18 @@
     ],
     [
         "c) Contractor's report ref. HGU-MTS-00220-23-B dated 17 April 2023",
+        {
+            "entities": [
+                [
+                    28,
+                    46,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "d) Contractor's report ref. HGU-MTS-00187-23-B dated 04 April 2023",
         {
             "entities": [
                 [
@@ -3744,6 +3768,18 @@
         }
     ],
     [
+        "UJV-MLT-00367-21-B-RSK_CP06-Notice of estimated arrival - Shipment RSK-VN-0005...",
+        {
+            "entities": [
+                [
+                    0,
+                    27,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
         "HGU-MTS-00316-23-B",
         {
             "entities": [
@@ -3840,6 +3876,18 @@
         }
     ],
     [
+        "UJV-MLT-00468-21-B-THA_CP06-Employer's Claim Notice ERC-CP06-05-20-026 -Rates of Progress...",
+        {
+            "entities": [
+                [
+                    0,
+                    27,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
         "PIC-MLT-03064-22-E",
         {
             "entities": [
@@ -3858,6 +3906,42 @@
                 [
                     0,
                     19,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "UJV-MLT-00400-21-B-UJV_CP06-Temporary Air Conditioning for Elevated Section-Submission of IC15",
+        {
+            "entities": [
+                [
+                    0,
+                    27,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "UJV-MLT-00343-22-B-UJV_CP06-UJV actions to Step 3 clarification meeting 30.03.2022...",
+        {
+            "entities": [
+                [
+                    0,
+                    31,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "CSL-MLT-00024-23-E-V",
+        {
+            "entities": [
+                [
+                    0,
+                    20,
                     "REF_NO"
                 ]
             ]
@@ -3889,6 +3973,30 @@
     ],
     [
         "UJV-MLT-00235-18-B-APW_Notice of Delayed Event & Compensation Claim in Relation with Power Connection to EVN Network (1)",
+        {
+            "entities": [
+                [
+                    0,
+                    18,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "Ref /S6: HGU-MTS-00187-23-B",
+        {
+            "entities": [
+                [
+                    9,
+                    27,
+                    "REF_NO"
+                ]
+            ]
+        }
+    ],
+    [
+        "HGU-MTS-00212-23-B",
         {
             "entities": [
                 [
