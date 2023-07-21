@@ -56,7 +56,7 @@ count_null_files = 0
 file_name = ""
 
 try:
-    for root, dirs, files in os.walk("../preprocess/extracted_pdf"):
+    for root, dirs, files in os.walk("../test/extracted_pdf"):
         for file in files:
             # ignore file if it is not a pdf
             if not file.endswith(".txt"):
@@ -65,65 +65,63 @@ try:
 
             file_name = root.split('/')[-1]
 
-            output_file_path_orgs = f"../data/output_data/orgs/{file_name}.txt"
-            output_file_path_ref_nos = f"../data/output_data/ref_nos/{file_name}.txt"
-            output_file_path_dates = f"../data/output_data/dates/{file_name}.txt"
+            output_file_path_orgs = f"../data/output_data/sender/{file_name}.txt"
+            output_file_path_ref_nos = f"../data/output_data/refNo/{file_name}.txt"
+            output_file_path_dates = f"../data/output_data/receiveDate/{file_name}.txt"
 
             if os.path.exists(output_file_path_ref_nos):
                 continue
             else:
+                print("Processing", file)
                 file_text = load_data_txt(os.path.join(root, file))
 
                 # Create the directory if it doesn't exist
                 os.makedirs(os.path.dirname(output_file_path_ref_nos), exist_ok=True)
-                # os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
-                # os.makedirs(os.path.dirname(
-                #     output_file_path_dates), exist_ok=True)
+                os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
+                os.makedirs(os.path.dirname(
+                    output_file_path_dates), exist_ok=True)
 
                 # Extract the ref no
-
-                # check if there is date in the file name
-
                 ref_no = extract_ref_no(file_text, file_name)
 
                 if ref_no == "":
-                    print("Null ref no: ", file_name)
-                    count_null_files += 1
+                    ref_no = nlp_ref(file_text)
+                    if len(ref_no.ents) > 0:
+                        ref_no = ref_no.ents[0].text.replace(".", "").replace(" ", "").replace(" ", "").replace("D",
+                                                                                                                "0").replace(
+                            "o", "0").replace("O", "")
 
-                # date = extract_date(file_text)
-                # if date == "":
-                #     print("Null date: ", file_name)
-                #     count_null_files += 1
-
-                # orgs = []
-                # # Check if there is orgs in the file name
-                # if len(nlp_org(file_name).ents) > 0:
-                #     filename_orgs = nlp_org(file_name).ents[0].text
-                #
-                #     for filename_org in filename_orgs.split(","):
-                #         orgs.append(filename_org.strip())
-                #
-                # content_orgs = extract_orgs(file_text)
-                #
-                # if len(content_orgs) == 0:
-                #     # print("Null orgs: ", file_name)
-                #     count_null_files += 1
+                # Extract the date
+                # Check if there is a date in the file name
+                # if len(nlp_date(file_name).ents) > 0:
+                #     date = nlp_date(file_name).ents[0].text
                 # else:
-                #     for content_org in content_orgs:
-                #         save_data_txt(output_file_path_orgs, content_org + "\n")
-
-                # date = extract_date(file_text)
+                #     date = extract_date(file_text)
                 #
-                # if date == "":
-                #     print("Null date: ", file_name)
-                #     count_null_files += 1
+                #     if date == "":
+                #         date = nlp_date(file_text)
+                #         if len(date.ents) > 0:
+                #             date = date.ents[0].text
 
+                # Extract the orgs
+                orgs = []
+                # Check if there is orgs in the file text
+                if len(nlp_org(file_text).ents) > 0:
+                    for ent in nlp_org(file_text).ents:
+                        orgs.append(ent.text)
+
+                if len(orgs) == 0:
+                    count_null_files += 1
+                else:
+                    for content_org in orgs:
+                        save_data_txt(output_file_path_orgs, content_org + "\n")
+
+                # print("date", date)
+
+                # Save the data to txt file
                 save_data_txt(output_file_path_ref_nos, ref_no)
 
-                # save_data_txt(output_file_path_dates, orgs)
-
-                # for org in orgs:
-                #     save_data_txt(output_file_path_orgs, org)
+                # save_data_txt(output_file_path_dates, date)
 
                 print("Finished processing ", file_name)
 
@@ -131,6 +129,3 @@ try:
 except Exception as e:
     print("File: ", file_name)
     print("Error: ", e)
-
-print("Total: ", count_files)
-print("Null: ", count_null_files)
