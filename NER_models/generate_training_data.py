@@ -53,11 +53,12 @@ try:
 
                 for sentence in sentences:
                     sentence = sentence.strip()
-                    results = test_model(nlp_refs, sentence)
+                    results = test_model(nlp_dates, sentence)
 
                     if results is not None and results != []:
                         print("results: ", results)
                         TRAIN_DATA.append(results)
+                        break
 
             # print("TRAIN_DATA: ", TRAIN_DATA)
 
@@ -70,6 +71,7 @@ except Exception as e:
 
 # save_data_json("../data/trained_data/ref_no/mrb_ref_nos_training_data.json", TRAIN_DATA)
 
-save_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json", TRAIN_DATA)
+# save_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json", TRAIN_DATA)
 
+save_data_json("../data/trained_data/date/mrb_dates_training_data.json", TRAIN_DATA)
 print("count_files: ", count_files)

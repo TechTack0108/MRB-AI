@@ -29,14 +29,14 @@ def generate_better_organization_patterns(file):
 def create_training_data(file, type):
     data = load_data_json(file)
 
-    patterns = []
+    trained_patterns = []
     for item in data:
         pattern = {
             "label": type,
             "pattern": item
         }
-        patterns.append(pattern)
-    return patterns
+        trained_patterns.append(pattern)
+    return trained_patterns
 
 
 def generate_rules(patterns_data):
@@ -44,26 +44,27 @@ def generate_rules(patterns_data):
     ruler = nlp.add_pipe("entity_ruler")
     # noinspection PyUnresolvedReferences
     ruler.add_patterns(patterns_data)
-    nlp.to_disk("mrb_organizations_ner")
+    nlp.to_disk("mrb_dates_ner")
 
 
-better_version = generate_better_organization_patterns(
-    "../data/trained_data/organizations/mrb_organizations.json")
-
-patterns = create_training_data(
-    "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
-
-save_data_json("../data/trained_data/organizations/mrb_organizations_patterns.json", patterns)
+# better_version = generate_better_organization_patterns(
+#     "../data/trained_data/organizations/mrb_organizations.json")
+#
+# patterns = create_training_data(
+#     "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
+#
+# save_data_json("../data/trained_data/organizations/mrb_organizations_patterns.json", patterns)
 
 # patterns = create_training_data(
 #     "../data/trained_data/ref_no/mrb_ref_nums.json", "REF_NO")
 #
 # save_data_json("../data/trained_data/ref_no/mrb_ref_nums_patterns.json", patterns)
 
-# patterns = create_training_data(
-#     "../data/trained_data/date/mrb_dates.json", "DATE")
+patterns = create_training_data(
+    "../data/trained_data/date/mrb_dates.json", "DATE")
 #
 # save_data_json(
 #     "../data/trained_data/date/mrb_dates_patterns.json", patterns)
+
 
 generate_rules(patterns)
