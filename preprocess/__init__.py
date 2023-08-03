@@ -6,9 +6,9 @@ import shutil
 from memory_profiler import profile
 
 # Set up the directories
-raw_pdf_dir = "/Users/nitieii/LNT + MRB Sharing Dropbox/CP09"
-processed_pdf_dir = "preprocess/processed_pdf"
-extracted_text_dir = "preprocess/extracted_pdf"
+raw_pdf_dir = "../files"
+processed_pdf_dir = "processed_pdf"
+extracted_text_dir = "extracted_pdf"
 
 # # remove the directories if they exist
 # shutil.rmtree(processed_pdf_dir)

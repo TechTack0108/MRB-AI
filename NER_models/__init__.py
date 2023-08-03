@@ -56,7 +56,7 @@ count_null_files = 0
 file_name = ""
 
 try:
-    for root, dirs, files in os.walk("../test/extracted_pdf"):
+    for root, dirs, files in os.walk("../preprocess/extracted_pdf"):
         for file in files:
             # ignore file if it is not a pdf
             if not file.endswith(".txt"):
@@ -93,35 +93,20 @@ try:
 
                 # Extract the date
                 # Check if there is a date in the file name
-                # if len(nlp_date(file_name).ents) > 0:
-                #     date = nlp_date(file_name).ents[0].text
-                # else:
-                #     date = extract_date(file_text)
-                #
-                #     if date == "":
-                #         date = nlp_date(file_text)
-                #         if len(date.ents) > 0:
-                #             date = date.ents[0].text
+                date = extract_date(file_text)
+                if date:
+                    save_data_txt(output_file_path_dates, date)
 
                 # Extract the orgs
                 orgs = []
                 # Check if there is orgs in the file text
                 if len(nlp_org(file_text).ents) > 0:
                     for ent in nlp_org(file_text).ents:
-                        orgs.append(ent.text)
-
-                if len(orgs) == 0:
-                    count_null_files += 1
+                        save_data_txt(output_file_path_orgs, ent.text + "\n")
                 else:
-                    for content_org in orgs:
-                        save_data_txt(output_file_path_orgs, content_org + "\n")
-
-                # print("date", date)
-
-                # Save the data to txt file
-                save_data_txt(output_file_path_ref_nos, ref_no)
-
-                # save_data_txt(output_file_path_dates, date)
+                    orgs = extract_orgs(file_text)
+                    for org in orgs:
+                        save_data_txt(output_file_path_orgs, org + "\n")
 
                 print("Finished processing ", file_name)
 

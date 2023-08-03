@@ -37,28 +37,22 @@ try:
             file_name = root.split("/")[-1]
 
             print("processing file: " + file_name)
-            result = test_model(nlp_refs, file_name)
 
-            # check if file_name has ref_no
-            if result != [] and result is not None:
-                print("results: ", result)
-                TRAIN_DATA.append(result)
-            else:
-                file_path = os.path.join(root, file)
+            file_path = os.path.join(root, file)
 
-                text = load_data_txt(file_path)
-                ie_data = {}
+            text = load_data_txt(file_path)
+            ie_data = {}
 
-                sentences = text.split("\n")
+            sentences = text.split("\n")
 
-                for sentence in sentences:
-                    sentence = sentence.strip()
-                    results = test_model(nlp_dates, sentence)
+            for sentence in sentences:
+                sentence = sentence.strip().replace("\n", " ").replace("\n\n", " ")
+                results = test_model(nlp_dates, sentence)
 
-                    if results is not None and results != []:
-                        print("results: ", results)
-                        TRAIN_DATA.append(results)
-                        break
+                if results is not None and results != []:
+                    print("results: ", results)
+                    TRAIN_DATA.append(results)
+                    break
 
             # print("TRAIN_DATA: ", TRAIN_DATA)
 
