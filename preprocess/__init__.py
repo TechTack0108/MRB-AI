@@ -3,7 +3,6 @@ import os
 from PyPDF2 import PdfReader
 from pdf_preprocess import preprocess_pdf
 import shutil
-from memory_profiler import profile
 
 # Set up the directories
 raw_pdf_dir = "../files"

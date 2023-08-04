@@ -1,8 +1,7 @@
 import cv2
 import numpy as np
-from memory_profiler import profile
 
-@profile
+
 def noise_removal(image):
     try:
         # Check if the image is already in grayscale
@@ -30,7 +29,7 @@ def noise_removal(image):
     except Exception as e:
         return print("Error in noise_removal: ", e)
 
-@profile
+
 def enhance_image(image):
     try:
         # Convert image to grayscale if necessary

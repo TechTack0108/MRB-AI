@@ -5,10 +5,8 @@ import numpy as np
 import os
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
-from memory_profiler import profile
 
 
-@profile
 def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path):
     try:
         print(f"--- Processing page {page_num + 1}... ---")
@@ -51,7 +49,6 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
         return print("Error in preprocess_page: ", e)
 
 
-@profile
 def get_kv_map(blocks):
     key_map = {}
     value_map = {}
