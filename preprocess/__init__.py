@@ -1,13 +1,15 @@
-import time
 import os
 from PyPDF2 import PdfReader
+
 from pdf_preprocess import preprocess_pdf
-import shutil
+
+current_dir = os.path.dirname(os.path.realpath(__file__))
+mrb_ai_dir = os.path.dirname(current_dir)
 
 # Set up the directories
-raw_pdf_dir = "../files"
-processed_pdf_dir = "processed_pdf"
-extracted_text_dir = "extracted_pdf"
+raw_pdf_dir = mrb_ai_dir + "/files"
+processed_pdf_dir = current_dir + "/processed_pdf"
+extracted_text_dir = current_dir + "/extracted_pdf"
 
 # # remove the directories if they exist
 # shutil.rmtree(processed_pdf_dir)
@@ -16,8 +18,6 @@ extracted_text_dir = "extracted_pdf"
 # Create the directories if they don't exist
 os.makedirs(processed_pdf_dir, exist_ok=True)
 os.makedirs(extracted_text_dir, exist_ok=True)
-
-start_time = time.time()
 
 for root, dirs, files in os.walk(raw_pdf_dir):
     for file in files:
@@ -32,8 +32,3 @@ for root, dirs, files in os.walk(raw_pdf_dir):
             preprocess_pdf(os.path.join(root, file),
                            processed_pdf_dir, extracted_text_dir)
             print(f"Finished processing {file}")
-
-end_time = time.time()
-execution_time = end_time - start_time
-
-print(f"Total execution time: {execution_time} seconds")

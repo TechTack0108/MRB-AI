@@ -19,11 +19,9 @@ def noise_removal(image):
         thresh, im_bw = cv2.threshold(
             denoised_image, 210, 230, cv2.THRESH_BINARY)
 
-        # Thicker the text
-        kernel = np.ones((2, 2), np.uint8)
-        im_bw = cv2.erode(im_bw, kernel, iterations=2)
-
         print("Noise removal done.")
+        # Thicker the text
+        im_bw = cv2.erode(im_bw, kernel, iterations=1)
 
         return im_bw
     except Exception as e:
@@ -40,10 +38,6 @@ def enhance_image(image):
         clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
         contrast_enhanced_image = clahe.apply(image)
 
-        # Apply sharpening
-        kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
-        sharpened_image = cv2.filter2D(contrast_enhanced_image, -1, kernel)
-
-        return sharpened_image
+        return contrast_enhanced_image
     except Exception as e:
         return print("Error in enhanced_image: ", e)

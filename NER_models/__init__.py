@@ -1,10 +1,14 @@
-import spacy
 import os
+import spacy
+
 from file_utils import load_data_txt, save_data_txt
 
-nlp_ref = spacy.load("mrb_ref_no_ner_model")
-nlp_org = spacy.load("mrb_organizations_ner_model")
-nlp_date = spacy.load("mrb_dates_ner_model")
+current_dir = os.path.dirname(os.path.realpath(__file__))
+mrb_ai_dir = os.path.dirname(current_dir)
+
+nlp_ref = spacy.load(current_dir + "/mrb_ref_no_ner_model")
+nlp_org = spacy.load(current_dir + "/mrb_organizations_ner_model")
+nlp_date = spacy.load(current_dir + "/mrb_dates_ner_model")
 
 
 def extract_ref_no(file_text, file_name):
@@ -55,8 +59,10 @@ count_files = 0
 count_null_files = 0
 file_name = ""
 
+extract_pdf_dir = mrb_ai_dir + "/preprocess/extracted_pdf"
+
 try:
-    for root, dirs, files in os.walk("../preprocess/extracted_pdf"):
+    for root, dirs, files in os.walk(extract_pdf_dir):
         for file in files:
             # ignore file if it is not a pdf
             if not file.endswith(".txt"):
@@ -65,9 +71,9 @@ try:
 
             file_name = root.split('/')[-1]
 
-            output_file_path_orgs = f"../data/output_data/sender/{file_name}.txt"
-            output_file_path_ref_nos = f"../data/output_data/refNo/{file_name}.txt"
-            output_file_path_dates = f"../data/output_data/receiveDate/{file_name}.txt"
+            output_file_path_orgs = mrb_ai_dir + "/data/output_data/sender/{file_name}.txt"
+            output_file_path_ref_nos = mrb_ai_dir + "../data/output_data/refNo/{file_name}.txt"
+            output_file_path_dates = mrb_ai_dir + "../data/output_data/receiveDate/{file_name}.txt"
 
             if os.path.exists(output_file_path_ref_nos):
                 continue

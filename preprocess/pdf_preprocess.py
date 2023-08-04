@@ -1,10 +1,10 @@
-from image_preprocess import noise_removal, enhance_image
-import pytesseract
 import cv2
-import numpy as np
 import os
+import pytesseract
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
+
+from image_preprocess import noise_removal, enhance_image
 
 
 def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path):
@@ -36,7 +36,7 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
 
         # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
-            nonoise_image, lang='eng', config='--oem 1 --psm 3')
+            nonoise_image, lang='vie+eng', config='--oem 1 --psm 3')
 
         # Save the extracted text
         extracted_text_path = os.path.join(
@@ -63,25 +63,26 @@ def get_kv_map(blocks):
     return key_map, value_map, block_map
 
 
-@profile
 def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):
     # Extract the file name and create the corresponding directories
     file_name = os.path.splitext(os.path.basename(pdf_path))[0]
-    processed_dir_path = os.path.join(processed_pdf_dir, file_name).replace("\\", "/")
+    processed_dir_path_before = os.path.join(processed_pdf_dir, "before", file_name).replace("\\", "/")
+    processed_dir_path_after = os.path.join(processed_pdf_dir, "after", file_name).replace("\\", "/")
     extracted_dir_path = os.path.join(extracted_text_dir, file_name).replace("\\", "/")
-    os.makedirs(processed_dir_path, exist_ok=True)
+    os.makedirs(processed_dir_path_before, exist_ok=True)
+    os.makedirs(processed_dir_path_after, exist_ok=True)
     os.makedirs(extracted_dir_path, exist_ok=True)
 
-    # Convert the PDF pages to images
+    # Convert the first PDF page to image
     pages = convert_from_path(pdf_path)
 
     # Set up a thread pool with a specified number of workers
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=4) as executor:
         # Process each page using thread pool
         for page_num in range(len(pages)):
             image = pages[page_num]
             image_path = os.path.join(
-                processed_dir_path, f"page_{page_num}.png")
+                processed_dir_path_before, f"page_{page_num}.png")
             image.save(image_path)  # Save the image as PNG
             executor.submit(preprocess_page, page_num, image_path,
-                            processed_dir_path, extracted_dir_path)
+                            processed_dir_path_after, extracted_dir_path)
