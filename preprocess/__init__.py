@@ -26,8 +26,7 @@ for root, dirs, files in os.walk(raw_pdf_dir):
         if file.endswith(".pdf") and os.stat(os.path.join(root, file)).st_size != 0 and not file.startswith(
                 '.') and not os.path.exists(
             os.path.join(processed_pdf_dir, os.path.splitext(file)[0])) and not os.path.exists(
-            os.path.join(extracted_text_dir, os.path.splitext(file)[0])) and not PdfReader(
-            open(os.path.join(root, file), 'rb')).is_encrypted:
+            os.path.join(extracted_text_dir, os.path.splitext(file)[0])):
             print(f"Processing {file}...")
             preprocess_pdf(os.path.join(root, file),
                            processed_pdf_dir, extracted_text_dir)
