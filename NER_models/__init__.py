@@ -72,8 +72,8 @@ try:
             file_name = root.split('/')[-1]
 
             output_file_path_orgs = mrb_ai_dir + "/data/output_data/sender/{file_name}.txt"
-            output_file_path_ref_nos = mrb_ai_dir + "../data/output_data/refNo/{file_name}.txt"
-            output_file_path_dates = mrb_ai_dir + "../data/output_data/receiveDate/{file_name}.txt"
+            output_file_path_ref_nos = mrb_ai_dir + "/data/output_data/refNo/{file_name}.txt"
+            output_file_path_dates = mrb_ai_dir + "/data/output_data/receiveDate/{file_name}.txt"
 
             if os.path.exists(output_file_path_ref_nos):
                 continue
