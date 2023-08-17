@@ -1,7 +1,10 @@
 import os
+import sys
 import spacy
 
 from file_utils import load_data_txt, save_data_txt
+
+download_id = sys.argv[1]
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
@@ -59,7 +62,7 @@ count_files = 0
 count_null_files = 0
 file_name = ""
 
-extract_pdf_dir = mrb_ai_dir + "/preprocess/extracted_pdf"
+extract_pdf_dir = mrb_ai_dir + "/preprocess/extracted_pdf/" + download_id
 
 try:
     for root, dirs, files in os.walk(extract_pdf_dir):
@@ -71,9 +74,9 @@ try:
 
             file_name = root.split('/')[-1]
 
-            output_file_path_orgs = mrb_ai_dir + "/data/output_data/sender/{file_name}.txt"
-            output_file_path_ref_nos = mrb_ai_dir + "/data/output_data/refNo/{file_name}.txt"
-            output_file_path_dates = mrb_ai_dir + "/data/output_data/receiveDate/{file_name}.txt"
+            output_file_path_orgs = mrb_ai_dir + f"/data/output_data/sender/{file_name}.txt"
+            output_file_path_ref_nos = mrb_ai_dir + f"/data/output_data/refNo/{file_name}.txt"
+            output_file_path_dates = mrb_ai_dir + f"/data/output_data/receiveDate/{file_name}.txt"
 
             if os.path.exists(output_file_path_ref_nos):
                 continue

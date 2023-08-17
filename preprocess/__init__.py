@@ -1,4 +1,5 @@
 import os
+import sys
 from PyPDF2 import PdfReader
 
 from pdf_preprocess import preprocess_pdf
@@ -6,10 +7,12 @@ from pdf_preprocess import preprocess_pdf
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
 
+download_id = sys.argv[1]
+
 # Set up the directories
-raw_pdf_dir = mrb_ai_dir + "/files"
-processed_pdf_dir = current_dir + "/processed_pdf"
-extracted_text_dir = current_dir + "/extracted_pdf"
+raw_pdf_dir = mrb_ai_dir + "/files/" + download_id
+processed_pdf_dir = current_dir + "/processed_pdf/" + download_id
+extracted_text_dir = current_dir + "/extracted_pdf/" + download_id
 
 # # remove the directories if they exist
 # shutil.rmtree(processed_pdf_dir)
