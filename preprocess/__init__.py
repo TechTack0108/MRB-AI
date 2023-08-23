@@ -7,7 +7,7 @@ from pdf_preprocess import preprocess_pdf
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
 
-download_id = sys.argv[1]
+download_id = "123"
 
 # Set up the directories
 raw_pdf_dir = mrb_ai_dir + "/files/" + download_id
@@ -24,8 +24,7 @@ os.makedirs(extracted_text_dir, exist_ok=True)
 
 for root, dirs, files in os.walk(raw_pdf_dir):
     for file in files:
-        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected, and the pdf is
-        # not color
+        # Check if the file is a PDF file, not empty, not hidden, not processed, and not protected, not color
         if file.endswith(".pdf") and os.stat(os.path.join(root, file)).st_size != 0 and not file.startswith(
                 '.') and not os.path.exists(
             os.path.join(processed_pdf_dir, os.path.splitext(file)[0])) and not os.path.exists(
