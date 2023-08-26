@@ -9,7 +9,7 @@ def extract_text_from_file(file, file_name):
     image = cv2.imread(file)
 
     extracted_text = pytesseract.image_to_string(
-        image, lang='vie+eng', config='--oem 1 --psm 3')
+        image, lang='vie+eng', config='psm 6')
 
     # create the directory if it doesn't exist
     os.makedirs(os.path.join(extracted_dir_path, file_name), exist_ok=True)

@@ -5,8 +5,11 @@ import math
 from file_utils import load_data_txt, save_data_json
 
 nlp_orgs = spacy.load("mrb_organizations_ner")
-nlp_dates = spacy.load("mrb_dates_ner")
-nlp_refs = spacy.load("mrb_ref_no_ner")
+
+
+# nlp_dates = spacy.load("mrb_dates_ner")
+# nlp_refs = spacy.load("mrb_ref_no_ner")
+# nlp_subject = spacy.load("mrb_subject_ner")
 
 
 def test_model(model, text):
@@ -47,7 +50,7 @@ try:
 
             for sentence in sentences:
                 sentence = sentence.strip().replace("\n", " ").replace("\n\n", " ")
-                results = test_model(nlp_dates, sentence)
+                results = test_model(nlp_orgs, sentence)
 
                 if results is not None and results != []:
                     print("results: ", results)
@@ -65,7 +68,9 @@ except Exception as e:
 
 # save_data_json("../data/trained_data/ref_no/mrb_ref_nos_training_data.json", TRAIN_DATA)
 
-# save_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json", TRAIN_DATA)
+save_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json", TRAIN_DATA)
 
-save_data_json("../data/trained_data/date/mrb_dates_training_data.json", TRAIN_DATA)
+# save_data_json("../data/trained_data/date/mrb_dates_training_data.json", TRAIN_DATA)
+
+# save_data_json("../data/trained_data/subject/mrb_subject_training_data.json", TRAIN_DATA)
 print("count_files: ", count_files)

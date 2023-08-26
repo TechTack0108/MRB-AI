@@ -17,15 +17,15 @@
     "mode":"default"
   },
   "labels":{
-    "entity_ruler":[
-      "ORG"
+    "ner":[
+      "SUBJECT"
     ]
   },
   "pipeline":[
-    "entity_ruler"
+    "ner"
   ],
   "components":[
-    "entity_ruler"
+    "ner"
   ],
   "disabled":[
 

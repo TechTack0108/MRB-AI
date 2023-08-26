@@ -18,7 +18,7 @@
   },
   "labels":{
     "entity_ruler":[
-      "ORG"
+      "SUBJECT"
     ]
   },
   "pipeline":[
