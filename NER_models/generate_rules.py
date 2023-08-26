@@ -50,24 +50,23 @@ def generate_rules(patterns_data, name):
 # better_version = generate_better_organization_patterns(
 #     "../data/trained_data/organizations/mrb_organizations.json")
 #
-patterns = create_training_data(
-    "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
-#
-save_data_json("../data/trained_data/organizations/mrb_organizations_patterns.json", patterns)
+# patterns = create_training_data(
+#     "../data/trained_data/organizations/mrb_better_organizations.json", "ORG")
+# #
+# save_data_json("../data/trained_data/organizations/mrb_organizations_patterns.json", patterns)
 
 # patterns = create_training_data(
 #     "../data/trained_data/ref_no/mrb_ref_nums.json", "REF_NO")
 #
 # save_data_json("../data/trained_data/ref_no/mrb_ref_nums_patterns.json", patterns)
 
-# patterns = create_training_data(
-#     "../data/trained_data/date/mrb_dates.json", "DATE")
+patterns = create_training_data(
+    "../data/trained_data/date/mrb_dates.json", "DATE")
 #
-# save_data_json(
-#     "../data/trained_data/date/mrb_dates_patterns.json", patterns)
+save_data_json(
+    "../data/trained_data/date/mrb_dates_patterns.json", patterns)
 
 # patterns = create_training_data("../data/trained_data/subject/mrb_subject.json", "SUBJECT")
 # save_data_json("../data/trained_data/organizations/mrb_subject_patterns.json", patterns)
 
-generate_rules(patterns, "mrb_organizations_ner")
-w
+generate_rules(patterns, "mrb_dates_ner")

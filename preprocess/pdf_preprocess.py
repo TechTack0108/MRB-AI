@@ -3,6 +3,8 @@ import os
 import pytesseract
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
+from autocorrect import Speller
+from langdetect import detect
 
 from image_preprocess import noise_removal, enhance_image
 
@@ -36,7 +38,16 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
 
         # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
-            nonoise_image, lang='vie+eng', config='--oem 1 --psm 3')
+            nonoise_image, lang='vie+eng', config='--psm 6')
+
+        # Perform spell.py check on the extracted text
+        lang = detect(extracted_text)
+
+        if lang != 'vi' or lang != 'en':
+            lang = 'en'
+
+        spell = Speller(fast=True, only_replacements=True, lang=lang)
+        extracted_text = spell(extracted_text).replace("\"", "")
 
         # Save the extracted text
         extracted_text_path = os.path.join(

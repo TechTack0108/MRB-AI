@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import spacy
 
@@ -15,14 +16,19 @@ nlp_date = spacy.load(current_dir + "/mrb_dates_ner_model")
 nlp_subject = spacy.load(current_dir + "/mrb_subject_ner_model")
 
 
-def extract_ref_no(file_text):
-    doc_ref = nlp_ref(file_text)
+def extract_ref_no(file_text, file_name):
+    doc_ref = nlp_ref(file_name)
     ref_nos = []
 
     if len(doc_ref.ents) > 0:
-        for ent in doc_ref.ents:
-            ref = ent.text.replace(
-                ".", "").replace(" ", "").replace(" ", "").replace("D", "0").replace("o", "0").replace("O", "")
+        ref_nos.append(doc_ref.ents[0].text)
+
+    doc_ref = nlp_ref(file_text)
+
+    for ent in doc_ref.ents:
+        ref = ent.text
+        # check if the ref is in the list of ref_nos, and the ref contains both letters and numbers
+        if ref not in ref_nos and (bool(re.search(r'[a-zA-Z]', ref)) and bool(re.search(r'\d', ref))):
             ref_nos.append(ref)
 
     return ref_nos
@@ -58,8 +64,7 @@ def extract_date(file_text):
     doc = nlp_date(file_text)
 
     if len(doc.ents) > 0:
-        for ent in doc.ents:
-            return ent.text
+        return doc.ents[0].text
     else:
         return ""
 
@@ -75,7 +80,6 @@ try:
         for file in files:
             # ignore file if it is not a pdf
             if not file.endswith("page_1.txt"):
-                print(f"Skipping {file}")
                 continue
 
             file_name = root.split('/')[-1]
@@ -100,7 +104,7 @@ try:
                     output_file_path_subject), exist_ok=True)
 
                 # Extract the ref no
-                ref_nos_list = extract_ref_no(file_text)
+                ref_nos_list = extract_ref_no(file_text, file_name)
 
                 for ref in ref_nos_list:
                     save_data_txt(output_file_path_ref_nos, ref + "\n")
@@ -108,6 +112,8 @@ try:
                 # Extract the date
                 # Check if there is a date in the file name
                 date = extract_date(file_text)
+                print("Date: ", date)
+
                 if date:
                     save_data_txt(output_file_path_dates, date)
 
