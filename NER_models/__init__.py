@@ -89,48 +89,48 @@ try:
             output_file_path_dates = mrb_ai_dir + f"/data/output_data/receiveDate/{file_name}.txt"
             output_file_path_subject = mrb_ai_dir + f"/data/output_data/subject/{file_name}.txt"
 
-            if os.path.exists(output_file_path_ref_nos):
-                continue
-            else:
-                print("Processing", file)
-                file_text = load_data_txt(os.path.join(root, file))
+            # if os.path.exists(output_file_path_ref_nos):
+            #     continue
+            # else:
+            print("Processing", file)
+            file_text = load_data_txt(os.path.join(root, file))
 
-                # Create the directory if it doesn't exist
-                os.makedirs(os.path.dirname(output_file_path_ref_nos), exist_ok=True)
-                os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
-                os.makedirs(os.path.dirname(
-                    output_file_path_dates), exist_ok=True)
-                os.makedirs(os.path.dirname(
-                    output_file_path_subject), exist_ok=True)
+            # Create the directory if it doesn't exist
+            os.makedirs(os.path.dirname(output_file_path_ref_nos), exist_ok=True)
+            os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
+            os.makedirs(os.path.dirname(
+                output_file_path_dates), exist_ok=True)
+            os.makedirs(os.path.dirname(
+                output_file_path_subject), exist_ok=True)
 
-                # Extract the ref no
-                ref_nos_list = extract_ref_no(file_text, file_name)
+            # Extract the ref no
+            ref_nos_list = extract_ref_no(file_text, file_name)
 
-                for ref in ref_nos_list:
-                    save_data_txt(output_file_path_ref_nos, ref + "\n")
+            for ref in ref_nos_list:
+                save_data_txt(output_file_path_ref_nos, ref + "\n")
 
-                # Extract the date
-                # Check if there is a date in the file name
-                date = extract_date(file_text)
-                print("Date: ", date)
+            # Extract the date
+            # Check if there is a date in the file name
+            date = extract_date(file_text)
+            print("Date: ", date)
 
-                if date:
-                    save_data_txt(output_file_path_dates, date)
+            if date:
+                save_data_txt(output_file_path_dates, date)
 
-                # Extract the orgs
-                orgs = extract_orgs(file_text)
+            # Extract the orgs
+            orgs = extract_orgs(file_text)
 
-                for org in orgs:
-                    save_data_txt(output_file_path_orgs, org + "\n")
+            for org in orgs:
+                save_data_txt(output_file_path_orgs, org + "\n")
 
-                # Extract the subject
-                # subject = extract_subject(file_text)
-                # if subject:
-                #     save_data_txt(output_file_path_subject, subject)
+            # Extract the subject
+            subject = extract_subject(file_text)
+            if subject:
+                save_data_txt(output_file_path_subject, subject)
 
-                print("Finished processing ", file_name)
+            print("Finished processing ", file_name)
 
-                count_files += 1
+            count_files += 1
 except Exception as e:
     print("File: ", file_name)
     print("Error: ", e)
