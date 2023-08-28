@@ -4,7 +4,7 @@ import math
 
 from file_utils import load_data_txt, save_data_json
 
-nlp_orgs = spacy.load("mrb_organizations_ner")
+# nlp_orgs = spacy.load("mrb_organizations_ner")
 
 nlp_dates = spacy.load("mrb_dates_ner")
 

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 # Define the start and end years
 start_year = 2009
-end_year = 2023
+end_year = 2030
 
 # Generate a list of all dates between the start and end years
 all_dates = []
@@ -26,6 +26,14 @@ def generate_formats(date):
         parsed_date.strftime("%Y-%m-%d"),
         parsed_date.strftime("%Y/%m/%d"),
         parsed_date.strftime('%B %d" %Y'),
+        parsed_date.strftime("%B %d, %Y"),
+        parsed_date.strftime("%Y%m%d"),
+        parsed_date.strftime("%Y.%m.%d"),
+        parsed_date.strftime("%d day of %B %Y"),
+        parsed_date.strftime("%d %B %Y"),
+        parsed_date.strftime("%Y %m %d"),
+        parsed_date.strftime("Tháng %m/%Y"),
+        parsed_date.strftime("Ngày %d tháng %m năm %Y"),
         # ... add more formats as needed
     ]
 

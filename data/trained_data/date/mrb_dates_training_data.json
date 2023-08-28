@@ -180,6 +180,30 @@
         }
     ],
     [
+        "(Tr\u1ea3 l\u1eddi th\u01b0 PIC s\u1ed1 PIC-MLT-06028-21-E&V ng\u00e0y 31/12/2022)",
+        {
+            "entities": [
+                [
+                    46,
+                    56,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Date - January 05, 2022",
+        {
+            "entities": [
+                [
+                    7,
+                    23,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Tham chi\u1ebfu th\u01b0 S\u1ed1 Ng\u00e0y: a. 217/\u00d0S\u0110T-DA1 nh\u1eadn ng\u00e0y 26/02/21",
         {
             "entities": [
@@ -1146,6 +1170,18 @@
                 [
                     7,
                     17,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Monday, May 24, 2021 4:18 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
                     "DATE"
                 ]
             ]
@@ -4647,12 +4683,12 @@
         }
     ],
     [
-        "shifts in the main office from 18 to 25 March 2020 to avoid physical interaction, and starting 26",
+        "the Prime Minister of Vietnam issued Directive No. 16/CT-TTg on March 31, 2020, which sets out",
         {
             "entities": [
                 [
-                    37,
-                    50,
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -4671,6 +4707,18 @@
         }
     ],
     [
+        "The V and VI of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    53,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "26 March 2020",
         {
             "entities": [
@@ -4683,12 +4731,12 @@
         }
     ],
     [
-        "o Time of entry: 15 October 2020",
+        "o Passport No.: 19EA42192, valid until 23 July 2029",
         {
             "entities": [
                 [
-                    17,
-                    32,
+                    39,
+                    51,
                     "DATE"
                 ]
             ]
@@ -4701,6 +4749,18 @@
                 [
                     9,
                     19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -4759,6 +4819,18 @@
                 [
                     27,
                     40,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "on April 24, 2020 to lift up partially the restrictive measures, gradually restore social economic activi-",
+        {
+            "entities": [
+                [
+                    3,
+                    17,
                     "DATE"
                 ]
             ]
@@ -4943,6 +5015,30 @@
         }
     ],
     [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "mitted by UJV on 03/02/2020 with the cut-off date of 25/01/2020. This 3 Months Rolling Pro-",
         {
             "entities": [
@@ -5038,6 +5134,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
                     "DATE"
                 ]
             ]
@@ -5157,6 +5265,18 @@
         }
     ],
     [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "o S\u1ed1 h\u1ed9 chi\u1ebfu: 13BF20398, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 12/06/2023",
         {
             "entities": [
@@ -5241,12 +5361,12 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
                     "DATE"
                 ]
             ]
@@ -5330,6 +5450,18 @@
         }
     ],
     [
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: 08 - 01/10/2020",
         {
             "entities": [
@@ -5383,6 +5515,18 @@
         }
     ],
     [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "STEE: 5600024023 O6IKD45010 28/01/2020) to cancel the trip to Europe",
         {
             "entities": [
@@ -5419,6 +5563,18 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 14/06/2020",
         {
             "entities": [
@@ -5437,6 +5593,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 05/CT-UBND Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    22,
+                    36,
                     "DATE"
                 ]
             ]
@@ -5853,6 +6021,30 @@
         }
     ],
     [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Hanoi, 19/02/2020",
         {
             "entities": [
@@ -5901,12 +6093,12 @@
         }
     ],
     [
-        "o Th\u1eddi gian nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19EF26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -6050,12 +6242,48 @@
         }
     ],
     [
+        "IV. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "contents of the Prime Minister\u2019s Directive No. OS/CT-1T dated 31/03/2020;",
         {
             "entities": [
                 [
                     62,
                     72,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
                     "DATE"
                 ]
             ]
@@ -6224,6 +6452,30 @@
         }
     ],
     [
+        "No. 16/CT-TTg Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 15/CT-TTg Hanoi, March 27, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Date: 2020-01-14 15:53",
         {
             "entities": [
@@ -6284,12 +6536,24 @@
         }
     ],
     [
-        "Th\u1eddi gian nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "LE 03/11/26 VINET Maryse",
         {
             "entities": [
                 [
-                    21,
-                    31,
+                    3,
+                    11,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
+        {
+            "entities": [
+                [
+                    44,
+                    54,
                     "DATE"
                 ]
             ]
@@ -6517,6 +6781,18 @@
         }
     ],
     [
+        "No. 19/CT-TTg Hanoi, April 24, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "| UJV-MLT-00252-20-V-ADE ngay: 09/03/2020 Page on |",
         {
             "entities": [
@@ -6672,6 +6948,30 @@
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "accordance with the Government\u2019s Resolution No. 42/NQ-CP dated April 09, 2020 on assistance",
+        {
+            "entities": [
+                [
+                    63,
+                    77,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -6887,6 +7187,18 @@
         }
     ],
     [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "quy\u1ebft \u0111\u1ecbnh c\u1ee7a m\u00ecnh v\u1ec1 vi\u1ec7c d\u1eebng C\u00f4ng vi\u1ec7c tr\u00ean c\u00f4ng tr\u01b0\u1eddng sau ng\u00e0y 02/04/2020.",
         {
             "entities": [
@@ -7042,6 +7354,18 @@
                 [
                     7,
                     17,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
                     "DATE"
                 ]
             ]
@@ -7204,6 +7528,18 @@
         }
     ],
     [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (TA No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Rail SAS -THALES SIX GTS France SAS (\u2018The Contractor\u2019 or \u201cUJV\u201d) on 17 January 2017 for the",
         {
             "entities": [
@@ -7336,6 +7672,30 @@
         }
     ],
     [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No. 4666/SYT-NVY Hanoi, 23 July 2020",
         {
             "entities": [
@@ -7396,12 +7756,24 @@
         }
     ],
     [
-        "information\u2019 received on 26/03/2020.",
+        "Amiens, March 31, 2020",
         {
             "entities": [
                 [
-                    25,
-                    35,
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
+        {
+            "entities": [
+                [
+                    32,
+                    46,
                     "DATE"
                 ]
             ]
@@ -7669,6 +8041,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption on Sunday, March 22, 2020 (TA No. 414).",
+        {
+            "entities": [
+                [
+                    35,
+                    49,
                     "DATE"
                 ]
             ]
@@ -8335,6 +8719,18 @@
         }
     ],
     [
+        "JOR No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    16,
+                    30,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "[a] Ch\u1ec9 th\u1ecb s\u1ed1 15/T-Tag ng\u00e0y 27/03/2020 c\u1ee7a Th\u1ee7 t\u01b0\u1edbng Ch\u00ednh ph\u1ee7 v\u1ec1",
         {
             "entities": [
@@ -8382,6 +8778,30 @@
                 [
                     52,
                     62,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
                     "DATE"
                 ]
             ]
@@ -8440,6 +8860,18 @@
                 [
                     10,
                     20,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
                     "DATE"
                 ]
             ]
@@ -8547,12 +8979,12 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
                     "DATE"
                 ]
             ]
@@ -8636,6 +9068,30 @@
         }
     ],
     [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: C06-28/09/2020-02 Hand, 28 September 2020",
         {
             "entities": [
@@ -8653,12 +9109,12 @@
         }
     ],
     [
-        "information\u2019 received on 26/03/2020.",
+        "Aliens, March 31, 2020",
         {
             "entities": [
                 [
-                    25,
-                    35,
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -8700,6 +9156,18 @@
                 [
                     26,
                     41,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
+        {
+            "entities": [
+                [
+                    32,
+                    46,
                     "DATE"
                 ]
             ]
@@ -8790,6 +9258,18 @@
         }
     ],
     [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Update on: 22/06/2020",
         {
             "entities": [
@@ -8832,6 +9312,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "In. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
                     "DATE"
                 ]
             ]
@@ -8898,17 +9390,24 @@
         }
     ],
     [
-        "in the main office from 18 to 25 March 2020 to avoid physical interaction, and starting 26 March 2020",
+        "the Prime Minister of Vietnam issued Directive No. 16/T-Tag on March 31, 2020, which sets out",
         {
             "entities": [
                 [
-                    30,
-                    43,
+                    63,
+                    77,
                     "DATE"
-                ],
+                ]
+            ]
+        }
+    ],
+    [
+        "JOR No. 0072 of March 24, 2020",
+        {
+            "entities": [
                 [
-                    88,
-                    101,
+                    16,
+                    30,
                     "DATE"
                 ]
             ]
@@ -8943,6 +9442,18 @@
                 [
                     26,
                     43,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (To No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
                     "DATE"
                 ]
             ]
@@ -8997,6 +9508,18 @@
         }
     ],
     [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Update on: 24/06/2020",
         {
             "entities": [
@@ -9015,6 +9538,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
                     "DATE"
                 ]
             ]
@@ -9110,12 +9645,24 @@
         }
     ],
     [
-        "o Time of entry: 15 October 2020",
+        "o Passport No.: 19En42192, valid until 23 July 2029",
         {
             "entities": [
                 [
-                    17,
-                    32,
+                    39,
+                    51,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Aliens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -9145,6 +9692,18 @@
                 [
                     9,
                     19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption on Sunday, March 22, 2020 (To No. 414).",
+        {
+            "entities": [
+                [
+                    35,
+                    49,
                     "DATE"
                 ]
             ]
@@ -9193,6 +9752,18 @@
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
                     "DATE"
                 ]
             ]
@@ -9371,6 +9942,18 @@
                 [
                     62,
                     72,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
                     "DATE"
                 ]
             ]
@@ -9591,6 +10174,30 @@
         }
     ],
     [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 05/T-BD Hand, March 31, 2020",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Hand 25 January 2021",
         {
             "entities": [
@@ -9786,6 +10393,18 @@
         }
     ],
     [
+        "No. 15/T-Tag Hand, March 27, 2020",
+        {
+            "entities": [
+                [
+                    19,
+                    33,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Ng\u00e0y: 10/02/2020",
         {
             "entities": [
@@ -9876,6 +10495,18 @@
                 [
                     57,
                     67,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Lt 03/11/26 VIE Maybe",
+        {
+            "entities": [
+                [
+                    3,
+                    11,
                     "DATE"
                 ]
             ]
@@ -10063,6 +10694,18 @@
         }
     ],
     [
+        "Date: July 30, 2020 Date-Hour/Gay-Id: \u01104|b\u2021]20 (0)",
+        {
+            "entities": [
+                [
+                    6,
+                    19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "c\u00f4ng v\u0103n nay theo Kho\u1ea3n 20.1 c\u1ee7a c\u00e1c \u0110i\u1ec1u ki\u1ec7n c\u1ee7a H\u1ee3p \u0111\u1ed3ng, v\u1edbi ng\u00e0y kh\u00f3a s\u1ed1 l\u00e0 25/06/2020. Do s\u1ef1 ki\u1ec7n n\u00e0y",
         {
             "entities": [
@@ -10099,12 +10742,48 @@
         }
     ],
     [
+        "No. 19/T-Tag Hand, April 24, 2020",
+        {
+            "entities": [
+                [
+                    19,
+                    33,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Engel: Letter ref. 2601/PCP-KG dated 03/04/2020 of Office of the Government.",
         {
             "entities": [
                 [
                     37,
                     47,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "accordance with the Government\u2019s Resolution No. 42/Ns-C dated April 09, 2020 on assistance",
+        {
+            "entities": [
+                [
+                    62,
+                    76,
                     "DATE"
                 ]
             ]
@@ -10195,12 +10874,12 @@
         }
     ],
     [
-        "\u00a9 Th\u1eddi gain nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19En26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029 |",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -10507,12 +11186,12 @@
         }
     ],
     [
-        "o_ Th\u1eddi gain nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "o_ S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
         {
             "entities": [
                 [
-                    24,
-                    34,
+                    47,
+                    57,
                     "DATE"
                 ]
             ]
@@ -10590,6 +11269,18 @@
                 [
                     6,
                     16,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 16/T-Tag Hand, March 31, 2020",
+        {
+            "entities": [
+                [
+                    19,
+                    33,
                     "DATE"
                 ]
             ]
@@ -10767,6 +11458,18 @@
         }
     ],
     [
+        "Aliens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "parts generated by the Covid-19 on the planning activities up to 25 December 2020 (cut-off date for this",
         {
             "entities": [
@@ -10785,6 +11488,18 @@
                 [
                     6,
                     16,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
                     "DATE"
                 ]
             ]
@@ -11085,6 +11800,18 @@
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The V and I of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    52,
+                    68,
                     "DATE"
                 ]
             ]
@@ -11456,12 +12183,12 @@
         }
     ],
     [
-        "shifts in the main office from 18 to 25 March 2020 to avoid physical interaction, and starting 26",
+        "the Prime Minister of Vietnam issued Directive No. 16/CT-TTg on March 31, 2020, which sets out",
         {
             "entities": [
                 [
-                    37,
-                    50,
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -11492,6 +12219,18 @@
         }
     ],
     [
+        "The V and VI of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    53,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "26 March 2020",
         {
             "entities": [
@@ -11504,12 +12243,12 @@
         }
     ],
     [
-        "o Time of entry: 15 October 2020",
+        "o Passport No.: 19EA42192, valid until 23 July 2029",
         {
             "entities": [
                 [
-                    17,
-                    32,
+                    39,
+                    51,
                     "DATE"
                 ]
             ]
@@ -11522,6 +12261,18 @@
                 [
                     9,
                     19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -11592,6 +12343,18 @@
                 [
                     32,
                     44,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "on April 24, 2020 to lift up partially the restrictive measures, gradually restore social economic activi-",
+        {
+            "entities": [
+                [
+                    3,
+                    17,
                     "DATE"
                 ]
             ]
@@ -11800,6 +12563,30 @@
         }
     ],
     [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "St Pierre des Corps, 10/30/2020",
         {
             "entities": [
@@ -11913,6 +12700,18 @@
         }
     ],
     [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 04/06/2020",
         {
             "entities": [
@@ -11943,6 +12742,18 @@
                 [
                     7,
                     17,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Thursday, March 19, 2020 7:29 PM",
+        {
+            "entities": [
+                [
+                    16,
+                    30,
                     "DATE"
                 ]
             ]
@@ -12032,6 +12843,18 @@
                 [
                     28,
                     43,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
                     "DATE"
                 ]
             ]
@@ -12134,12 +12957,12 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
                     "DATE"
                 ]
             ]
@@ -12271,6 +13094,18 @@
         }
     ],
     [
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: 08 - 01/10/2020",
         {
             "entities": [
@@ -12318,6 +13153,18 @@
                 [
                     28,
                     38,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -12420,6 +13267,18 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 14/06/2020",
         {
             "entities": [
@@ -12438,6 +13297,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 05/CT-UBND Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    22,
+                    36,
                     "DATE"
                 ]
             ]
@@ -13135,6 +14006,30 @@
         }
     ],
     [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "03/2020 | 23/03/2020 | 29/04/2021 26, 2020 64 To be defined",
         {
             "entities": [
@@ -13277,12 +14172,12 @@
         }
     ],
     [
-        "o Th\u1eddi gian nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19EF26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -13336,6 +14231,18 @@
                 [
                     27,
                     37,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Monday, May 18, 2020 4:07 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
                     "DATE"
                 ]
             ]
@@ -13486,12 +14393,48 @@
         }
     ],
     [
+        "IV. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "contents of the Prime Minister\u2019s Directive No. OS/CT-1T dated 31/03/2020;",
         {
             "entities": [
                 [
                     62,
                     72,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
                     "DATE"
                 ]
             ]
@@ -13776,6 +14719,30 @@
         }
     ],
     [
+        "No. 16/CT-TTg Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 15/CT-TTg Hanoi, March 27, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "c\u00f4ng tr\u01b0\u1eddng b\u1ecb t\u1ea1m d\u1eebng t\u1eeb ng\u00e0y 01 \u0111\u1ebfn ng\u00e0y 06/04/2020, d\u1eabn \u0111\u1ebfn vi\u1ec7c nh\u00f3m l\u1eafp \u0111\u1eb7t",
         {
             "entities": [
@@ -13884,12 +14851,24 @@
         }
     ],
     [
-        "Th\u1eddi gian nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "LE 03/11/26 VINET Maryse",
         {
             "entities": [
                 [
-                    21,
-                    31,
+                    3,
+                    11,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
+        {
+            "entities": [
+                [
+                    44,
+                    54,
                     "DATE"
                 ]
             ]
@@ -14225,6 +15204,18 @@
         }
     ],
     [
+        "No. 19/CT-TTg Hanoi, April 24, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "| UJV-MLT-00252-20-V-ADE ngay: 09/03/2020 Page on |",
         {
             "entities": [
@@ -14469,6 +15460,30 @@
                 [
                     72,
                     82,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "accordance with the Government\u2019s Resolution No. 42/NQ-CP dated April 09, 2020 on assistance",
+        {
+            "entities": [
+                [
+                    63,
+                    77,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -14791,6 +15806,18 @@
         }
     ],
     [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "quy\u1ebft \u0111\u1ecbnh c\u1ee7a m\u00ecnh v\u1ec1 vi\u1ec7c d\u1eebng C\u00f4ng vi\u1ec7c tr\u00ean c\u00f4ng tr\u01b0\u1eddng sau ng\u00e0y 02/04/2020.",
         {
             "entities": [
@@ -14964,6 +15991,18 @@
         }
     ],
     [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 17/08/2020",
         {
             "entities": [
@@ -15036,12 +16075,12 @@
         }
     ],
     [
-        "\u2014 Ban d\u1ecbch nay do ba L\u00ea Thi Cha, CMND s\u1ed1: 012392795 c\u1ea5p ng\u00e0y 23/12/2009 t\u1ea1i c\u00f4ng an Ha",
+        "Today, June 15, 2020 at Truong Thi Nga Notary Office, A4 \u2014 TT19 Van Quan urban area, Yen Phuc,",
         {
             "entities": [
                 [
-                    61,
-                    71,
+                    7,
+                    20,
                     "DATE"
                 ]
             ]
@@ -15150,6 +16189,18 @@
                 [
                     58,
                     70,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (TA No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
                     "DATE"
                 ]
             ]
@@ -15312,12 +16363,48 @@
         }
     ],
     [
+        "\u201cSan \u201d\u201d \u00e2n  -\"\"\"\"\"Yuesday, March 31, 2020 5:45 PM 1m. ..\u2014..rAa AM _\u1eaf\u00e9\u00f3\u00da\u1ec0 ..w.",
+        {
+            "entities": [
+                [
+                    27,
+                    41,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "H\u00e0 N\u1ed9i, 21/07/2020",
         {
             "entities": [
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -15384,24 +16471,36 @@
         }
     ],
     [
-        "information\u2019 received on 26/03/2020.",
+        "Amiens, March 31, 2020",
         {
             "entities": [
                 [
-                    25,
-                    35,
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "is August 26\" 2021.",
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
         {
             "entities": [
                 [
-                    3,
-                    18,
+                    32,
+                    46,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "St Pierre des Corps, June 16, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    34,
                     "DATE"
                 ]
             ]
@@ -15510,6 +16609,18 @@
                 [
                     6,
                     16,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "anounced by th\u00e9 Malaydl\u00e1n Govitnment from Maroh 81, 2020, Until April 14, 2020. When reopened on March 46 \u00cc\u00f1 `",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -15639,6 +16750,18 @@
         }
     ],
     [
+        "13/01/2030",
+        {
+            "entities": [
+                [
+                    0,
+                    10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Ng\u00e0y k\u00fd: 04/06/2020",
         {
             "entities": [
@@ -15711,6 +16834,18 @@
         }
     ],
     [
+        "Discussion and adoption on Sunday, March 22, 2020 (TA No. 414).",
+        {
+            "entities": [
+                [
+                    35,
+                    49,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 25/06/2020",
         {
             "entities": [
@@ -15747,12 +16882,12 @@
         }
     ],
     [
-        "is August 26\" 2021.",
+        "St Pierre des Corps, June 16, 2020",
         {
             "entities": [
                 [
-                    3,
-                    18,
+                    21,
+                    34,
                     "DATE"
                 ]
             ]
@@ -15771,12 +16906,60 @@
         }
     ],
     [
+        "\u201cSan \u201d\u201d \u00e2n  -\"\"\"\"\"Yuesday, March 31, 2020 5:45 PM 1m. ..\u2014..rAa AM _\u1eaf\u00e9\u00f3\u00da\u1ec0 ..w.",
+        {
+            "entities": [
+                [
+                    27,
+                    41,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "on April 24, 2020 to lift up partially the restrictive measures, gradually restore social economic activi-",
+        {
+            "entities": [
+                [
+                    3,
+                    17,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: 2872/SLDTBXH-VLATLD Hanoi, 30 July 2020",
         {
             "entities": [
                 [
                     32,
                     44,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -15842,6 +17025,30 @@
                 [
                     74,
                     84,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -15985,6 +17192,18 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 20/06/2020",
         {
             "entities": [
@@ -16105,6 +17324,30 @@
         }
     ],
     [
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
+        {
+            "entities": [
+                [
+                    32,
+                    46,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: CP06-08/10/2020 Hanoi, 08 October 2020",
         {
             "entities": [
@@ -16134,12 +17377,12 @@
         }
     ],
     [
-        "information\u2019 received on 26/03/2020.",
+        "Amiens, March 31, 2020",
         {
             "entities": [
                 [
-                    25,
-                    35,
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -16276,12 +17519,12 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
                     "DATE"
                 ]
             ]
@@ -16318,6 +17561,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
                     "DATE"
                 ]
             ]
@@ -16384,6 +17639,18 @@
         }
     ],
     [
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: CP06-18/09/2020 Hanoi, 18 September 2020",
         {
             "entities": [
@@ -16418,24 +17685,48 @@
         }
     ],
     [
-        "o Time of entry: 15 October 2020",
+        "o Passport No.: 19EA42192, valid until 23 July 2029",
         {
             "entities": [
                 [
-                    17,
-                    32,
+                    39,
+                    51,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "shifts in the main office from 18 to 25 March 2020 to avoid physical interaction, and starting 26",
+        "Amiens, March 25, 2020",
         {
             "entities": [
                 [
-                    37,
-                    50,
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "the Prime Minister of Vietnam issued Directive No. 16/CT-TTg on March 31, 2020, which sets out",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -16514,6 +17805,18 @@
         }
     ],
     [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 23/06/2020",
         {
             "entities": [
@@ -16550,12 +17853,36 @@
         }
     ],
     [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 18/06/2020",
         {
             "entities": [
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "13/01/2030",
+        {
+            "entities": [
+                [
+                    0,
+                    10,
                     "DATE"
                 ]
             ]
@@ -16634,6 +17961,18 @@
         }
     ],
     [
+        "Discussion and adoption on Sunday, March 22, 2020 (TA No. 414).",
+        {
+            "entities": [
+                [
+                    35,
+                    49,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "S\u1ed1: CP06-28/09/2020-01 H\u00e0 N\u1ed9i, ng\u00e0y 28 th\u00e1ng 09 n\u0103m 2020",
         {
             "entities": [
@@ -16686,6 +18025,18 @@
                 [
                     0,
                     13,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (TA No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
                     "DATE"
                 ]
             ]
@@ -16751,6 +18102,18 @@
                 [
                     59,
                     69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
                     "DATE"
                 ]
             ]
@@ -16823,6 +18186,18 @@
                 [
                     0,
                     10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Thursday, March 19, 2020 7:29 PM",
+        {
+            "entities": [
+                [
+                    16,
+                    30,
                     "DATE"
                 ]
             ]
@@ -17011,6 +18386,18 @@
                 [
                     29,
                     39,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
                     "DATE"
                 ]
             ]
@@ -17352,6 +18739,30 @@
         }
     ],
     [
+        "No. 16/CT-TTg Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "01/02/2020. Ch\u00fang t\u00f4i tin rang PIC ho\u00e0n to\u00e0n bi\u1ebft r\u00f5 c\u00e1c th\u00f4ng tin li\u00ean quan \u0111\u1ebfn v\u1ea5n \u0111\u1ec1 n\u00e0y, bao g\u1ed3m c\u00f4ng b\u1ed1 c\u1ee7a Th\u1ee7",
         {
             "entities": [
@@ -17610,6 +19021,18 @@
         }
     ],
     [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "- V\u0103n b\u1ea3n s\u1ed1 2601/VPCP-KGVX ng\u00e0y 03/04/2020 c\u1ee7a V\u0103n ph\u00f2ng Ch\u1ec9nh ph\u1ee7;",
         {
             "entities": [
@@ -17729,6 +19152,18 @@
                 [
                     5,
                     15,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "LE 03/11/26 VINET Maryse",
+        {
+            "entities": [
+                [
+                    3,
+                    11,
                     "DATE"
                 ]
             ]
@@ -18048,12 +19483,36 @@
         }
     ],
     [
+        "No. 19/CT-TTg Hanoi, April 24, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "contents of the Prime Minister\u2019s Directive No. OS/CT-1T dated 31/03/2020;",
         {
             "entities": [
                 [
                     62,
                     72,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 15/CT-TTg Hanoi, March 27, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
                     "DATE"
                 ]
             ]
@@ -18161,12 +19620,12 @@
         }
     ],
     [
-        "o Th\u1eddi gian nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19EF26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -18281,12 +19740,36 @@
         }
     ],
     [
+        "accordance with the Government\u2019s Resolution No. 42/NQ-CP dated April 09, 2020 on assistance",
+        {
+            "entities": [
+                [
+                    63,
+                    77,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Enel: Letter ref. 2601/VPCP-KGVX dated 03/04/2020 of Office of the Government.",
         {
             "entities": [
                 [
                     39,
                     49,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -18582,12 +20065,12 @@
         }
     ],
     [
-        "Th\u1eddi gian nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
         {
             "entities": [
                 [
-                    21,
-                    31,
+                    44,
+                    54,
                     "DATE"
                 ]
             ]
@@ -18729,6 +20212,18 @@
         }
     ],
     [
+        "No. 05/CT-UBND Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    22,
+                    36,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 01/06/2020",
         {
             "entities": [
@@ -18747,6 +20242,30 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "IV. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "anounced by th\u00e9 Malaydl\u00e1n Govitnment from Maroh 81, 2020, Until April 14, 2020. When reopened on March 46 \u00cc\u00f1 `",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -18914,6 +20433,18 @@
         }
     ],
     [
+        "Sent: Monday, May 18, 2020 4:07 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "9 | Ahcen TABET | Lai tau Angieri | 144361311 oe 18 th\u00e1ng | 01/08/2020",
         {
             "entities": [
@@ -18998,12 +20529,12 @@
         }
     ],
     [
-        "\u2014 Ban d\u1ecbch nay do ba L\u00ea Thi Cha, CMND s\u1ed1: 012392795 c\u1ea5p ng\u00e0y 23/12/2009 t\u1ea1i c\u00f4ng an Ha",
+        "Today, June 15, 2020 at Truong Thi Nga Notary Office, A4 \u2014 TT19 Van Quan urban area, Yen Phuc,",
         {
             "entities": [
                 [
-                    61,
-                    71,
+                    7,
+                    20,
                     "DATE"
                 ]
             ]
@@ -19268,6 +20799,18 @@
                 [
                     32,
                     42,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The V and VI of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    53,
+                    69,
                     "DATE"
                 ]
             ]
@@ -19735,6 +21278,18 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "[a] Ch\u1ec9 th\u1ecb s\u1ed1 15/C\u00f3-Tag ng\u00e0y 27/03/2020 c\u1ee7a Th\u1ee7 t\u01b0\u1edbng Ch\u00ednh ph\u1ee7 v\u1ec1",
         {
             "entities": [
@@ -19782,6 +21337,30 @@
                 [
                     53,
                     63,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
                     "DATE"
                 ]
             ]
@@ -19846,6 +21425,18 @@
         }
     ],
     [
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "According to the Article 51.2, Decree 37/2015/Ns-Co dated 22/04/2015: \u201cForce majeure is a risky",
         {
             "entities": [
@@ -19899,12 +21490,12 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
                     "DATE"
                 ]
             ]
@@ -19952,6 +21543,30 @@
         }
     ],
     [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "No.: Co06-28/09/2020-02 Hanoi, 28 September 2020",
         {
             "entities": [
@@ -19980,6 +21595,18 @@
                 [
                     28,
                     43,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
+        {
+            "entities": [
+                [
+                    32,
+                    46,
                     "DATE"
                 ]
             ]
@@ -20046,6 +21673,30 @@
         }
     ],
     [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "In. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Hanoi, 10/06/2020",
         {
             "entities": [
@@ -20094,17 +21745,24 @@
         }
     ],
     [
-        "in the main office from 18 to 25 March 2020 to avoid physical interaction, and starting 26 March 2020",
+        "the Prime Minister of Vietnam issued Directive No. 16/Co-Tag on March 31, 2020, which sets out",
         {
             "entities": [
                 [
-                    30,
-                    43,
+                    64,
+                    78,
                     "DATE"
-                ],
+                ]
+            ]
+        }
+    ],
+    [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
                 [
-                    88,
-                    101,
+                    17,
+                    31,
                     "DATE"
                 ]
             ]
@@ -20145,6 +21803,18 @@
         }
     ],
     [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (To No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Manufaturing to Mobilie lifting PMadie9 ae _. . { Letter from supplier on 20/04/2020",
         {
             "entities": [
@@ -20163,6 +21833,30 @@
                 [
                     29,
                     39,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
                     "DATE"
                 ]
             ]
@@ -20234,12 +21928,12 @@
         }
     ],
     [
-        "o Time of entry: 15 October 2020",
+        "o Passport No.: 19En42192, valid until 23 July 2029",
         {
             "entities": [
                 [
-                    17,
-                    32,
+                    39,
+                    51,
                     "DATE"
                 ]
             ]
@@ -20269,6 +21963,18 @@
                 [
                     9,
                     19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption on Sunday, March 22, 2020 (To No. 414).",
+        {
+            "entities": [
+                [
+                    35,
+                    49,
                     "DATE"
                 ]
             ]
@@ -20317,6 +22023,18 @@
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
                     "DATE"
                 ]
             ]
@@ -20447,6 +22165,18 @@
                 [
                     63,
                     73,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
                     "DATE"
                 ]
             ]
@@ -20643,6 +22373,18 @@
         }
     ],
     [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Hanoi 25 January 2021",
         {
             "entities": [
@@ -20808,6 +22550,18 @@
                 [
                     0,
                     10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "No. 15/Co-Tag Hanoi, March 27, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
                     "DATE"
                 ]
             ]
@@ -21055,6 +22809,18 @@
         }
     ],
     [
+        "Date: July 30, 2020 Date-Hour/Nguy-Did: \u01104|b\u2021]20 (0)",
+        {
+            "entities": [
+                [
+                    6,
+                    19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "c\u00f4ng v\u0103n nay theo Kho\u1ea3n 20.1 c\u1ee7a c\u00e1c \u0110i\u1ec1u ki\u1ec7n c\u1ee7a H\u1ee3p \u0111\u1ed3ng, v\u1edbi ng\u00e0y kh\u00f3a s\u1ed1 l\u00e0 25/06/2020. Do s\u1ef1 ki\u1ec7n n\u00e0y",
         {
             "entities": [
@@ -21073,6 +22839,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -21151,12 +22929,12 @@
         }
     ],
     [
-        "\u00a9 Th\u1eddi gian nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19Em26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029 |",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -21379,12 +23157,12 @@
         }
     ],
     [
-        "o_ Th\u1eddi gian nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "o_ S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
         {
             "entities": [
                 [
-                    24,
-                    34,
+                    47,
+                    57,
                     "DATE"
                 ]
             ]
@@ -21574,6 +23352,18 @@
         }
     ],
     [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "H\u00e0 N\u1ed9i, 10/06/2020",
         {
             "entities": [
@@ -21700,6 +23490,18 @@
                 [
                     9,
                     19,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The V and Vs of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    53,
+                    69,
                     "DATE"
                 ]
             ]
@@ -21879,12 +23681,24 @@
         }
     ],
     [
-        "Until 15 April 2020, cruise ships and passenger ships carrying more than 100 passengers are prohibited",
+        "|. - Until March 31, 2020, any movements of people away from their home is prohibited with the exception",
         {
             "entities": [
                 [
-                    6,
-                    19,
+                    11,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Monday, May 18, 2020 4:07 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    26,
                     "DATE"
                 ]
             ]
@@ -21951,12 +23765,48 @@
         }
     ],
     [
+        "expenses incurred for the second ballot initially scheduled for March 22, 2020 under, respectively, the",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "is fixed at July 10, 2020 at 6 p.m. hours. For those present in the second round, the deadline is",
+        {
+            "entities": [
+                [
+                    12,
+                    25,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "on 28/01/2020) to cancel the trip to",
         {
             "entities": [
                 [
                     3,
                     13,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "13/01/2030",
+        {
+            "entities": [
+                [
+                    0,
+                    10,
                     "DATE"
                 ]
             ]
@@ -21999,12 +23849,36 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 01/06/2020",
         {
             "entities": [
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "IV. - This article is applicable, until May 31, 2020, throughout the territory of the Republic.",
+        {
+            "entities": [
+                [
+                    40,
+                    52,
                     "DATE"
                 ]
             ]
@@ -22041,6 +23915,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Dated March 23, 2020.",
+        {
+            "entities": [
+                [
+                    6,
+                    20,
                     "DATE"
                 ]
             ]
@@ -22119,12 +24005,36 @@
         }
     ],
     [
+        "LE 03/11/26 VINET Maryse",
+        {
+            "entities": [
+                [
+                    3,
+                    11,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "26 March 2020",
         {
             "entities": [
                 [
                     0,
                     13,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -22256,6 +24166,18 @@
         }
     ],
     [
+        "|. - The provisions of this article are applicable until May 31, 2020 to the sale of hydro-alcoholic gels",
+        {
+            "entities": [
+                [
+                    57,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 15/06/2020",
         {
             "entities": [
@@ -22367,12 +24289,24 @@
         }
     ],
     [
-        "o Th\u1eddi gian nh\u1eadp c\u1ea3nh: 30/06/2020",
+        "No later than May 23, 2020, a report from the Government on the state of the Covid-19 pandemic, the",
         {
             "entities": [
                 [
-                    23,
-                    33,
+                    14,
+                    26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "o S\u1ed1 h\u1ed9 chi\u1ebfu: 19EF26108, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 15/09/2029",
+        {
+            "entities": [
+                [
+                    46,
+                    56,
                     "DATE"
                 ]
             ]
@@ -22403,12 +24337,12 @@
         }
     ],
     [
-        "\u2014 Ban d\u1ecbch nay do ba L\u00ea Thi Cha, CMND s\u1ed1: 012392795 c\u1ea5p ng\u00e0y 23/12/2009 t\u1ea1i c\u00f4ng an Ha",
+        "Today, June 15, 2020 at Truong Thi Nga Notary Office, A4 \u2014 TT19 Van Quan urban area, Yen Phuc,",
         {
             "entities": [
                 [
-                    61,
-                    71,
+                    7,
+                    20,
                     "DATE"
                 ]
             ]
@@ -22421,6 +24355,18 @@
                 [
                     0,
                     10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The following are suspended, until March 29, 2020:",
+        {
+            "entities": [
+                [
+                    40,
+                    54,
                     "DATE"
                 ]
             ]
@@ -22463,6 +24409,18 @@
         }
     ],
     [
+        "Amiens, March 25, 2020",
+        {
+            "entities": [
+                [
+                    8,
+                    22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "1 Deprecq _ Notification of Site Closure Deprecq 17/03/2020",
         {
             "entities": [
@@ -22481,6 +24439,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "|. - The movement of people by commercial air transport will be prohibited until April 15, 2020, unless",
+        {
+            "entities": [
+                [
+                    81,
+                    95,
                     "DATE"
                 ]
             ]
@@ -22564,12 +24534,24 @@
         }
     ],
     [
-        "Th\u1eddi gian nh\u1eadp c\u1ea3nh: 15/07/2020",
+        "Discussion and adoption on Sunday, March 22, 2020 (TA No. 414).",
         {
             "entities": [
                 [
-                    21,
-                    31,
+                    35,
+                    49,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "S\u1ed1 h\u1ed9 chi\u1ebfu: G18218888, c\u00f3 gi\u00e1 tr\u1ecb \u0111\u1ebfn ng\u00e0y 21/08/2025",
+        {
+            "entities": [
+                [
+                    44,
+                    54,
                     "DATE"
                 ]
             ]
@@ -22582,6 +24564,18 @@
                 [
                     47,
                     57,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Discussion and adoption, after initiation of the accelerated procedure, on March 19, 2020 (TA No. 76,",
+        {
+            "entities": [
+                [
+                    75,
+                    89,
                     "DATE"
                 ]
             ]
@@ -22654,6 +24648,18 @@
                 [
                     11,
                     21,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "or open environment is prohibited on the territory of the Republic until April 15, 2020.",
+        {
+            "entities": [
+                [
+                    73,
+                    87,
                     "DATE"
                 ]
             ]
@@ -22957,6 +24963,18 @@
         }
     ],
     [
+        "No. 19/CT-TTg Hanoi, April 24, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "01/04/2020; b\u1ed1 tr\u00ed nh\u00e2n s\u1ef1 tr\u1ef1c dam b\u1ea3o an to\u00e0n, an ninh, ph\u00f2ng ch\u1ed1ng ch\u00e1y",
         {
             "entities": [
@@ -23011,6 +25029,18 @@
                 [
                     8,
                     18,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "anounced by th\u00e9 Malaydl\u00e1n Govitnment from Maroh 81, 2020, Until April 14, 2020. When reopened on March 46 \u00cc\u00f1 `",
+        {
+            "entities": [
+                [
+                    64,
+                    78,
                     "DATE"
                 ]
             ]
@@ -23282,6 +25312,18 @@
         }
     ],
     [
+        "accordance with the Government\u2019s Resolution No. 42/NQ-CP dated April 09, 2020 on assistance",
+        {
+            "entities": [
+                [
+                    63,
+                    77,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "- Ch\u1ec9 th\u1ecb s\u1ed1 05/CT-UBND ng\u00e0y 31/03/2020 c\u1ee7a Ch\u1ee7 t\u1ecbch UBND TP H\u00e0 N\u1ed9i;",
         {
             "entities": [
@@ -23294,12 +25336,36 @@
         }
     ],
     [
+        "No. 15/CT-TTg Hanoi, March 27, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "01/04/2020; b\u1ed1 tr\u00ed nh\u00e2n s\u1ef1 tr\u1ef1c \u0111\u1ea3m b\u1ea3o an to\u00e0n, an n\u00ednh, ph\u00f2ng ch\u1ed1ng ch\u00e1y",
         {
             "entities": [
                 [
                     0,
                     10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "\u201cSan \u201d\u201d \u00e2n  -\"\"\"\"\"Yuesday, March 31, 2020 5:45 PM 1m. ..\u2014..rAa AM _\u1eaf\u00e9\u00f3\u00da\u1ec0 ..w.",
+        {
+            "entities": [
+                [
+                    27,
+                    41,
                     "DATE"
                 ]
             ]
@@ -23588,6 +25654,18 @@
         }
     ],
     [
+        "for persons entering Vietnam from March 08, 2020 and not quarantined in quarantine zones to",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 27/04/2020",
         {
             "entities": [
@@ -23666,6 +25744,11 @@
                 [
                     0,
                     10,
+                    "DATE"
+                ],
+                [
+                    43,
+                    53,
                     "DATE"
                 ]
             ]
@@ -24018,6 +26101,30 @@
         }
     ],
     [
+        "No. 05/CT-UBND Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    22,
+                    36,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "with Laos and Cambodia from 12 am of April 01, 2020. Strictly control the entry through",
+        {
+            "entities": [
+                [
+                    37,
+                    51,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "[a] Ch\u1ec9 th\u1ecb s\u1ed1 05/CT-UBND ng\u00e0y 31/03/2020 c\u1ee7a Ch\u1ee7 t\u1ecbch UBND TP H\u00e0 N\u1ed9i",
         {
             "entities": [
@@ -24234,6 +26341,18 @@
         }
     ],
     [
+        "Sent: Thursday, March 19, 2020 7:29 PM",
+        {
+            "entities": [
+                [
+                    16,
+                    30,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "H\u00e0 N\u1ed9i, 07/04/2020",
         {
             "entities": [
@@ -24431,6 +26550,18 @@
         }
     ],
     [
+        "No. 16/CT-TTg Hanoi, March 31, 2020",
+        {
+            "entities": [
+                [
+                    21,
+                    35,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "contents of the Prime Minister\u2019s Directive No. OS/CT-1T dated 31/03/2020;",
         {
             "entities": [
@@ -24609,6 +26740,18 @@
         }
     ],
     [
+        "Mai Hospital from March 12, 2020. Local authorities shall supervise the home quarantine",
+        {
+            "entities": [
+                [
+                    18,
+                    32,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Updade on: 07/06/2020",
         {
             "entities": [
@@ -24703,6 +26846,18 @@
         }
     ],
     [
+        "into force, if necessary, as of March 12, 2020, within the domain of the law and, if necessary, to extend",
+        {
+            "entities": [
+                [
+                    32,
+                    46,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "0680002960 ICS SCADA Functional FAT | 19/02/2020 | 02/03/2020 | 08/06/2020 | 12/06/2020 because of illness or le p u 48 N/A",
         {
             "entities": [
@@ -24790,12 +26945,48 @@
         }
     ],
     [
+        "JORF No. 0072 of March 24, 2020",
+        {
+            "entities": [
+                [
+                    17,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Code in order to extend, for a period not exceeding December 31, 2020, the term of office of the",
+        {
+            "entities": [
+                [
+                    52,
+                    69,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Version N\u00b0 1 du 03/07/2019",
         {
             "entities": [
                 [
                     16,
                     26,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "measures are made applicable from March 12, 2020 and cannot exceed by more than three months the",
+        {
+            "entities": [
+                [
+                    34,
+                    48,
                     "DATE"
                 ]
             ]
@@ -24898,12 +27089,12 @@
         }
     ],
     [
-        "information\u2019 received on 26/03/2020.",
+        "Amiens, March 31, 2020",
         {
             "entities": [
                 [
-                    25,
-                    35,
+                    8,
+                    22,
                     "DATE"
                 ]
             ]
@@ -25018,12 +27209,24 @@
         }
     ],
     [
-        "is August 26\" 2021.",
+        "St Pierre des Corps, June 16, 2020",
         {
             "entities": [
                 [
-                    3,
-                    18,
+                    21,
+                    34,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The V and VI of article 29 of the law no. 2018-32 of January 22, 2018 of programming of public finances",
+        {
+            "entities": [
+                [
+                    53,
+                    69,
                     "DATE"
                 ]
             ]
@@ -25586,12 +27789,12 @@
         }
     ],
     [
-        "Sent: 27 October 2020 8:02 AM",
+        "Sent: Tuesday, October 27, 2020 3:54 PM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    15,
+                    31,
                     "DATE"
                 ]
             ]
@@ -25610,12 +27813,12 @@
         }
     ],
     [
-        "Sent: 20 November 2020 3:18 PM",
+        "Sent: Friday, November 20, 2020 9:19 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
@@ -25634,12 +27837,12 @@
         }
     ],
     [
-        "Sent: 26 November 2020 5:06 PM",
+        "Sent: Thursday, November 26, 2020 11:07 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    16,
+                    33,
                     "DATE"
                 ]
             ]
@@ -25658,12 +27861,12 @@
         }
     ],
     [
-        "Sent: 27 November 2020 4:20 PM",
+        "Sent: Friday, November 27, 2020 10:31 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
@@ -25712,6 +27915,18 @@
                 [
                     6,
                     22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Saturday, December 12, 2020 6:11 PM",
+        {
+            "entities": [
+                [
+                    16,
+                    33,
                     "DATE"
                 ]
             ]
@@ -25790,12 +28005,12 @@
         }
     ],
     [
-        "Sent: 20 October 2020 6:21 PM",
+        "Sent: Wednesday, October 21, 2020 12:59 AM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    17,
+                    33,
                     "DATE"
                 ]
             ]
@@ -25958,12 +28173,12 @@
         }
     ],
     [
-        "Sent: 31 October 2020 10:53 AM",
+        "Sent: Saturday, October 31, 2020 4:54 PM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    16,
+                    32,
                     "DATE"
                 ]
             ]
@@ -25982,48 +28197,48 @@
         }
     ],
     [
-        "Sent: 16 November 2020 8:10 PM",
+        "Sent: Tuesday, November 17, 2020 2:11 AM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    15,
+                    32,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 13 November 2020 9:45 AM",
+        "Sent: Friday, November 13, 2020 3:46 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 13 November 2020 5:57 PM",
+        "Sent: Friday, November 13, 2020 11:58 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 10 December 2020 7:44 AM",
+        "Sent: Thursday, December 10, 2020 1:49 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    16,
+                    33,
                     "DATE"
                 ]
             ]
@@ -26591,6 +28806,18 @@
                 [
                     12,
                     22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "dated 25/06/2024",
+        {
+            "entities": [
+                [
+                    6,
+                    16,
                     "DATE"
                 ]
             ]
@@ -27431,6 +29658,18 @@
                 [
                     0,
                     10,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "030093006582, issued on September 23, 2019",
+        {
+            "entities": [
+                [
+                    24,
+                    42,
                     "DATE"
                 ]
             ]
@@ -28854,6 +31093,18 @@
         }
     ],
     [
+        "030093006582, issued on September 23, 2019",
+        {
+            "entities": [
+                [
+                    24,
+                    42,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Daesof. 14/09/2020",
         {
             "entities": [
@@ -29632,6 +31883,30 @@
         }
     ],
     [
+        "Sent: Monday, January 18, 2021 6:33 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    30,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Monday, November 30, 2020 12:24 PM",
+        {
+            "entities": [
+                [
+                    14,
+                    31,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "Involce date/ H\u00f4a \u0111\u01a1n ng\u00e0y: 18/03/2021",
         {
             "entities": [
@@ -29662,6 +31937,18 @@
                 [
                     79,
                     89,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Based on com\u00bfart No. HPLIALAP-C5 dated lanvary 17, 20'7, Coneaet Agreement No | dated July 02, 2018",
+        {
+            "entities": [
+                [
+                    86,
+                    99,
                     "DATE"
                 ]
             ]
@@ -30561,6 +32848,18 @@
         }
     ],
     [
+        "UJV-MLT-00635-21-V-THA ngay: 12/07/2024 pao 27 |",
+        {
+            "entities": [
+                [
+                    29,
+                    39,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
         "UJV-MLT-00702-21-V-THA ngay: 02/08/2021 Page 7/10 |",
         {
             "entities": [
@@ -30873,12 +33172,12 @@
         }
     ],
     [
-        "Sent: 27 October 2020 8:02 AM",
+        "Sent: Tuesday, October 27, 2020 3:54 PM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    15,
+                    31,
                     "DATE"
                 ]
             ]
@@ -30897,12 +33196,12 @@
         }
     ],
     [
-        "Sent: 20 November 2020 3:18 PM",
+        "Sent: Friday, November 20, 2020 9:19 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
@@ -30921,12 +33220,12 @@
         }
     ],
     [
-        "Sent: 26 November 2020 5:06 PM",
+        "Sent: Thursday, November 26, 2020 11:07 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    16,
+                    33,
                     "DATE"
                 ]
             ]
@@ -30945,12 +33244,12 @@
         }
     ],
     [
-        "Sent: 27 November 2020 4:20 PM",
+        "Sent: Friday, November 27, 2020 10:31 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
@@ -30999,6 +33298,18 @@
                 [
                     6,
                     22,
+                    "DATE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Sent: Saturday, December 12, 2020 6:11 PM",
+        {
+            "entities": [
+                [
+                    16,
+                    33,
                     "DATE"
                 ]
             ]
@@ -31077,12 +33388,12 @@
         }
     ],
     [
-        "Sent: 20 October 2020 6:21 PM",
+        "Sent: Wednesday, October 21, 2020 12:59 AM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    17,
+                    33,
                     "DATE"
                 ]
             ]
@@ -31245,12 +33556,12 @@
         }
     ],
     [
-        "Sent: 31 October 2020 10:53 AM",
+        "Sent: Saturday, October 31, 2020 4:54 PM",
         {
             "entities": [
                 [
-                    6,
-                    21,
+                    16,
+                    32,
                     "DATE"
                 ]
             ]
@@ -31269,48 +33580,48 @@
         }
     ],
     [
-        "Sent: 16 November 2020 8:10 PM",
+        "Sent: Tuesday, November 17, 2020 2:11 AM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    15,
+                    32,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 13 November 2020 9:45 AM",
+        "Sent: Friday, November 13, 2020 3:46 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 13 November 2020 5:57 PM",
+        "Sent: Friday, November 13, 2020 11:58 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    14,
+                    31,
                     "DATE"
                 ]
             ]
         }
     ],
     [
-        "Sent: 10 December 2020 7:44 AM",
+        "Sent: Thursday, December 10, 2020 1:49 PM",
         {
             "entities": [
                 [
-                    6,
-                    22,
+                    16,
+                    33,
                     "DATE"
                 ]
             ]

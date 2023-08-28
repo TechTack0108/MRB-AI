@@ -38,7 +38,7 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
 
         # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
-            nonoise_image, lang='vie+eng', config='--psm 6')
+            nonoise_image, lang='vie+eng', config="--oem 3")
 
         # Perform spell.py check on the extracted text
         lang = detect(extracted_text)

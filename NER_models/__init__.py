@@ -5,7 +5,7 @@ import spacy
 
 from file_utils import load_data_txt, save_data_txt
 
-download_id = sys.argv[1]
+download_id = "123"
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
@@ -27,8 +27,8 @@ def extract_ref_no(file_text, file_name):
 
     for ent in doc_ref.ents:
         ref = ent.text
-        # check if the ref is in the list of ref_nos, and the ref contains both letters and numbers
-        if ref not in ref_nos and (bool(re.search(r'[a-zA-Z]', ref)) and bool(re.search(r'\d', ref))):
+        # check if the ref is in the list of ref_nos, and the ref contains only letters and numbers and "-" and "_"
+        if ref not in ref_nos and re.match(r'^(?=.*[a-zA-Z])(?=.*\d)(?!.*\s)[a-zA-Z\d_-]+$', ref):
             ref_nos.append(ref)
 
     return ref_nos
@@ -40,9 +40,12 @@ def extract_orgs(file_text):
 
     if len(doc_org.ents) > 0:
         for ent in doc_org.ents:
-            org = ent.text
-            # check if the org lowercase, uppercase and org is in the list of orgs
-            if org.lower() not in orgs and org.upper() not in orgs and org not in orgs:
+            org = ent.text.upper()
+            # check if the org lowercase, uppercase and org is in the list of orgs and org does not contain numbers
+            # or special characters, and vietnamese characters
+            if "(" + org + ")" not in orgs and not any(char.isdigit() for char in org) and not any(
+                    char in "!@#$%^&*[]{};:,./<>?\|`~-=_+" for char in org) and org not in orgs and not any(
+                char in "àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ" for char in org):
                 orgs.append(org)
 
     return orgs
@@ -60,13 +63,19 @@ def extract_subject(file_text):
     return subject
 
 
-def extract_date(file_text):
-    doc = nlp_date(file_text)
+def extract_date(file_text, file_name):
+    doc = nlp_date(file_name)
+
+    if len(doc.ents) == 0:
+        doc = nlp_date(file_text)
 
     if len(doc.ents) > 0:
+        if "%" in doc.ents[0].text and "&*" in doc.ents[0].text:
+            doc.ents[0].text.replace("%", "").replace("&*", "")
+
         return doc.ents[0].text
-    else:
-        return ""
+
+    return ""
 
 
 count_files = 0
@@ -89,48 +98,46 @@ try:
             output_file_path_dates = mrb_ai_dir + f"/data/output_data/receiveDate/{file_name}.txt"
             output_file_path_subject = mrb_ai_dir + f"/data/output_data/subject/{file_name}.txt"
 
-            # if os.path.exists(output_file_path_ref_nos):
-            #     continue
-            # else:
-            print("Processing", file)
-            file_text = load_data_txt(os.path.join(root, file))
+            if os.path.exists(output_file_path_ref_nos):
+                continue
+            else:
+                print("Processing", file)
+                file_text = load_data_txt(os.path.join(root, file))
 
-            # Create the directory if it doesn't exist
-            os.makedirs(os.path.dirname(output_file_path_ref_nos), exist_ok=True)
-            os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
-            os.makedirs(os.path.dirname(
-                output_file_path_dates), exist_ok=True)
-            os.makedirs(os.path.dirname(
-                output_file_path_subject), exist_ok=True)
+                # Create the directory if it doesn't exist
+                os.makedirs(os.path.dirname(output_file_path_ref_nos), exist_ok=True)
+                os.makedirs(os.path.dirname(output_file_path_orgs), exist_ok=True)
+                os.makedirs(os.path.dirname(
+                    output_file_path_dates), exist_ok=True)
+                os.makedirs(os.path.dirname(
+                    output_file_path_subject), exist_ok=True)
 
-            # Extract the ref no
-            ref_nos_list = extract_ref_no(file_text, file_name)
+                # Extract the ref no
+                ref_nos_list = extract_ref_no(file_text, file_name)
 
-            for ref in ref_nos_list:
-                save_data_txt(output_file_path_ref_nos, ref + "\n")
+                for ref in ref_nos_list:
+                    save_data_txt(output_file_path_ref_nos, ref + "\n")
 
-            # Extract the date
-            # Check if there is a date in the file name
-            date = extract_date(file_text)
-            print("Date: ", date)
+                # Extract the date
+                date = extract_date(file_text, file_name)
 
-            if date:
-                save_data_txt(output_file_path_dates, date)
+                if date:
+                    save_data_txt(output_file_path_dates, date)
 
-            # Extract the orgs
-            orgs = extract_orgs(file_text)
+                # Extract the orgs
+                orgs = extract_orgs(file_text)
 
-            for org in orgs:
-                save_data_txt(output_file_path_orgs, org + "\n")
+                for org in orgs:
+                    save_data_txt(output_file_path_orgs, org + "\n")
 
-            # Extract the subject
-            subject = extract_subject(file_text)
-            if subject:
-                save_data_txt(output_file_path_subject, subject)
+                # Extract the subject
+                # subject = extract_subject(file_text)
+                # if subject:
+                #     save_data_txt(output_file_path_subject, subject)
 
-            print("Finished processing ", file_name)
+                print("Finished processing ", file_name)
 
-            count_files += 1
+                count_files += 1
 except Exception as e:
     print("File: ", file_name)
     print("Error: ", e)
