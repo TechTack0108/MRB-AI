@@ -21,8 +21,6 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
             print(f"Error loading image: {image_path}")
             return
 
-        # deskewed_image = deskew(image)
-
         # Apply noise removal techniques
         nonoise_image = noise_removal(image)
         nonoise_image = enhance_image(nonoise_image)
@@ -32,9 +30,6 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
             processed_dir_path, f"page_{page_num + 1}.png")
 
         cv2.imwrite(processed_image_path, nonoise_image)
-
-        # only extract the text from the header of the page
-        # header_extracted_text = pytesseract.image_to_string(
 
         # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
@@ -84,16 +79,34 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):
     os.makedirs(processed_dir_path_after, exist_ok=True)
     os.makedirs(extracted_dir_path, exist_ok=True)
 
-    # Convert the first PDF page to image
-    pages = convert_from_path(pdf_path)
+    scanned_pdf = True  # Assume it's scanned by default
 
-    # Set up a thread pool with a specified number of workers
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        # Process each page using thread pool
-        for page_num in range(len(pages)):
-            image = pages[page_num]
-            image_path = os.path.join(
-                processed_dir_path_before, f"page_{page_num}.png")
-            image.save(image_path)  # Save the image as PNG
-            executor.submit(preprocess_page, page_num, image_path,
-                            processed_dir_path_after, extracted_dir_path)
+    # Check if the PDF is scanned or not
+    with open(pdf_path, 'rb') as pdf_file:
+        pdf_content = pdf_file.read()
+    if b"/Font" in pdf_content or b"/XObject" in pdf_content:
+        scanned_pdf = False  # It's not scanned, contains text
+
+    if scanned_pdf:
+        # Convert the first PDF page to image
+        pages = convert_from_path(pdf_path)
+
+        # Set up a thread pool with a specified number of workers
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            # Process each page using thread pool
+            for page_num in range(len(pages)):
+                image = pages[page_num]
+                image_path = os.path.join(
+                    processed_dir_path_before, f"page_{page_num}.png")
+                image.save(image_path)  # Save the image as PNG
+                executor.submit(preprocess_page, page_num, image_path,
+                                processed_dir_path_after, extracted_dir_path)
+    else:
+        extracted_text = ""
+        with open(pdf_path, 'rb') as pdf_file:
+            pdf_text = pdf_file.read()
+            extracted_text = pdf_text.decode('utf-8', errors='ignore')
+            extracted_text_path = os.path.join(
+                extracted_dir_path, f"{file_name}.txt")
+            with open(extracted_text_path, 'w', encoding='utf-8') as text_file:
+                text_file.write(extracted_text)

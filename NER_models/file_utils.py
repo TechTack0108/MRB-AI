@@ -10,7 +10,6 @@ def load_data_json(file):
 def save_data_json(file, data):
     # append to file
     with open(file, "w", encoding="utf-8") as f:
-        f.write("\n")
         f.write(json.dumps(data, indent=4))
 
 

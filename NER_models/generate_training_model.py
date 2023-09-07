@@ -50,12 +50,12 @@ def train_spacy(data, iterations):
     return nlp
 
 
-DATES_TRAIN_DATA = load_data_json("../data/trained_data/date/mrb_dates_training_data.json")
+# DATES_TRAIN_DATA = load_data_json("../data/trained_data/date/mrb_dates_training_data.json")
 # REF_TRAIN_DATA = load_data_json("../data/trained_data/ref_no/mrb_ref_nos_training_data.json")
-# ORG_TRAIN_DATA = load_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json")
+ORG_TRAIN_DATA = load_data_json("../data/trained_data/organizations/mrb_organizations_training_data.json")
 # SUBJECT_TRAIN_DATA = load_data_json("../data/trained_data/subject/mrb_subject_training_data.json")
 
-nlp = train_spacy(DATES_TRAIN_DATA, 30)
-nlp.to_disk("mrb_dates_ner_model")
+nlp = train_spacy(ORG_TRAIN_DATA, 30)
+nlp.to_disk("mrb_organizations_ner_model")
 # nlp.to_disk("mrb_ref_no_ner_model")
 # nlp.to_disk("mrb_organizations_ner_model")
