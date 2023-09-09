@@ -113,16 +113,16 @@ try:
                     output_file_path_subject), exist_ok=True)
 
                 # Extract the ref no
-                # ref_nos_list = extract_ref_no(file_text, file_name)
-                #
-                # for ref in ref_nos_list:
-                #     save_data_txt(output_file_path_ref_nos, ref + "\n")
-                #
-                # # Extract the date
-                # date = extract_date(file_text, file_name)
-                #
-                # if date:
-                #     save_data_txt(output_file_path_dates, date)
+                ref_nos_list = extract_ref_no(file_text, file_name)
+
+                for ref in ref_nos_list:
+                    save_data_txt(output_file_path_ref_nos, ref + "\n")
+
+                # Extract the date
+                date = extract_date(file_text, file_name)
+
+                if date:
+                    save_data_txt(output_file_path_dates, date)
 
                 # Extract the orgs
                 orgs = extract_orgs(file_text)
