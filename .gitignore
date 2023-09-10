@@ -1,5 +1,6 @@
 preprocess/extracted_pdf/*
 preprocess/processed_pdf/*
+preprocess/searchable_pdf/*
 data/output_data
 preprocess/.DS_Store
 files
