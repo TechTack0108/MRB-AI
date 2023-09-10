@@ -3,6 +3,8 @@ import os
 import pytesseract
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
+from searchablePDF import create_searchable_pdf
+from PyPDF2 import PdfMerger
 
 
 # from image_preprocess import noise_removal, enhance_image
@@ -45,15 +47,20 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
         return print("Error in preprocess_page: ", e)
 
 
-def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):
+def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_pdf_dir):
     # Extract the file name and create the corresponding directories
     file_name = os.path.splitext(os.path.basename(pdf_path))[0]
     processed_dir_path_before = os.path.join(processed_pdf_dir, "before", file_name).replace("\\", "/")
     processed_dir_path_after = os.path.join(processed_pdf_dir, "after", file_name).replace("\\", "/")
     extracted_dir_path = os.path.join(extracted_text_dir, file_name).replace("\\", "/")
+
+    # create the directories if they don't exist
     os.makedirs(processed_dir_path_before, exist_ok=True)
     os.makedirs(processed_dir_path_after, exist_ok=True)
     os.makedirs(extracted_dir_path, exist_ok=True)
+
+    # PDF merger
+    merger = PdfMerger()
 
     # Convert the first PDF page to image
     pages = convert_from_path(pdf_path)
@@ -68,3 +75,9 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):
             image.save(image_path)  # Save the image as PNG
             executor.submit(preprocess_page, page_num, image_path,
                             processed_dir_path_after, extracted_dir_path)
+
+            # convert the processed images to searchable PDF
+            searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
+
+            create_searchable_pdf(image, searchable_pdf_dir_with_name, page_num, merger)
+        merger.close()
