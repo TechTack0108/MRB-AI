@@ -1,6 +1,5 @@
 import os
 import sys
-from PyPDF2 import PdfReader
 
 from pdf_preprocess import preprocess_pdf
 

@@ -101,7 +101,6 @@ try:
             if os.path.exists(output_file_path_ref_nos):
                 continue
             else:
-                print("Processing", file)
                 file_text = load_data_txt(os.path.join(root, file))
 
                 # Create the directory if it doesn't exist

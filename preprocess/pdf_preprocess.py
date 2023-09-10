@@ -3,10 +3,9 @@ import os
 import pytesseract
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
-from autocorrect import Speller
-from langdetect import detect
 
-from image_preprocess import noise_removal, enhance_image
+
+# from image_preprocess import noise_removal, enhance_image
 
 
 def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path):
@@ -16,24 +15,24 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
         # Load the image
         image = cv2.imread(image_path)
 
-        # Check if the image is loaded successfully
-        if image is None:
-            print(f"Error loading image: {image_path}")
-            return
-
-        # Apply noise removal techniques
-        nonoise_image = noise_removal(image)
-        nonoise_image = enhance_image(nonoise_image)
+        # # Check if the image is loaded successfully
+        # if image is None:
+        #     print(f"Error loading image: {image_path}")
+        #     return
+        #
+        # # Apply noise removal techniques
+        # nonoise_image = noise_removal(image)
+        # nonoise_image = enhance_image(nonoise_image)
 
         # Save the processed image
         processed_image_path = os.path.join(
             processed_dir_path, f"page_{page_num + 1}.png")
 
-        cv2.imwrite(processed_image_path, nonoise_image)
+        cv2.imwrite(processed_image_path, image)
 
         # Perform OCR on the processed image
         extracted_text = pytesseract.image_to_string(
-            nonoise_image, lang='vie+eng', config="--oem 3")
+            image, lang='vie+eng', config="--oem 3")
 
         # Save the extracted text
         extracted_text_path = os.path.join(
@@ -44,20 +43,6 @@ def preprocess_page(page_num, image_path, processed_dir_path, extracted_dir_path
 
     except Exception as e:
         return print("Error in preprocess_page: ", e)
-
-
-def get_kv_map(blocks):
-    key_map = {}
-    value_map = {}
-    block_map = {}
-    for block in blocks:
-        block_id = block['Id']
-        block_map[block_id] = block
-        if block['BlockType'] == "KEY_VALUE_SET" and 'KEY' in block['EntityTypes']:
-            key_map[block_id] = block
-        else:
-            value_map[block_id] = block
-    return key_map, value_map, block_map
 
 
 def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir):
