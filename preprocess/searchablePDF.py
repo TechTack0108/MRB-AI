@@ -16,7 +16,7 @@ def create_searchable_pdf(image, output_path: str, page_num: int, merger: PdfMer
 
     # Append the PDF page to the merger
     merger.append(pdf_page_path)
-    os.remove(pdf_page_path)
+    # os.remove(pdf_page_path)
 
     print("Done!")
     return None

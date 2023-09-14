@@ -60,7 +60,7 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
     os.makedirs(extracted_dir_path, exist_ok=True)
 
     # PDF merger
-    # merger = PdfMerger()
+    merger = PdfMerger()
 
     # Convert the first PDF page to image
     pages = convert_from_path(pdf_path)
@@ -77,9 +77,9 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
                             processed_dir_path_after, extracted_dir_path)
 
             # convert the processed images to searchable PDF
-        #     searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
-        #
-        #     create_searchable_pdf(image, searchable_pdf_dir_with_name, page_num, merger)
-        #
-        # merger.write(searchable_pdf_dir_with_name)
-        # merger.close()
+            searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
+
+            create_searchable_pdf(image, searchable_pdf_dir_with_name, page_num, merger)
+
+        merger.write(searchable_pdf_dir_with_name)
+        merger.close()

@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+
 import spacy
 
 from file_utils import load_data_txt, save_data_txt
@@ -34,21 +35,61 @@ def extract_ref_no(file_text, file_name):
     return ref_nos
 
 
-def extract_orgs(file_text):
-    doc_org = nlp_org(file_text)
-    orgs = []
+def check_if_value_exist_in_dict(value, dict):
+    for values in dict:
+        if value in values:
+            return True
 
-    if len(doc_org.ents) > 0:
-        for ent in doc_org.ents:
-            org = ent.text.upper()
-            # check if the org lowercase, uppercase and org is in the list of orgs and org does not contain numbers
-            # or special characters, and vietnamese characters
-            if "(" + org + ")" not in orgs and not any(char.isdigit() for char in org) and not any(
-                    char in "!@#$%^&*[]{};:,./<>?\|`~-=_+" for char in org) and org not in orgs and not any(
-                char in "àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ" for char in org):
-                orgs.append(org)
 
-    return orgs
+def extract_orgs(file_text, file_name):
+    try:
+        org_dict = {
+            "CSL": ["COLAS"],
+            "CSR": ["COLAS"],
+            "HGU": ["HUYNDAI", "GHELLA"],
+            "DLM": ["DAELIM"],
+            "HNC": ["HANOCORP"],
+            "VC2": ["VINACONEX"],
+            "PSC": ["POSCO"],
+            "UJV": ["ALSTOM", "COLAS", "THALES", "SAS"],
+            "MRB": [""]
+        }
+
+        orgs = []
+        # find the org in the file name first
+        doc_org = nlp_org(file_text)
+
+        if len(doc_org.ents) > 0:
+            for ent in doc_org.ents:
+                org = ent.text.upper()
+
+                # check if the org is in the org_dict, if it is, replace it with the org in the file name
+                if "(" + org + ")" in orgs or org in orgs or any(char.isdigit() for char in org) or any(
+                        char in "!@#$%^&*[]{};:,./<>?\|`~-=_+" for char in org) or any(
+                    char in "ÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ" for char in
+                    org):
+                    continue
+                else:
+                    found = False
+                    # replace the org in the org_dict with the org in the file name. ex: orgs = ["POSCO", "HNC"]
+                    # and the org is "PSC".Replace "POSCO" with "PSC"
+                    if org in org_dict and org not in orgs:
+                        for i, organization in enumerate(orgs):
+                            if organization in org_dict[org]:
+                                orgs[i] = org
+                                found = True
+
+                    # if the org is in the values array of the org_dict, and the key is in the orgs array, continue
+                    for key in org_dict:
+                        if org in org_dict[key] and key in orgs:
+                            found = True
+
+                    if not found:
+                        orgs.append(org)
+
+        return orgs
+    except Exception as e:
+        print(e)
 
 
 def extract_subject(file_text):
@@ -124,7 +165,7 @@ try:
                     save_data_txt(output_file_path_dates, date)
 
                 # Extract the orgs
-                orgs = extract_orgs(file_text)
+                orgs = extract_orgs(file_text, file_name)
 
                 for org in orgs:
                     save_data_txt(output_file_path_orgs, org + "\n")

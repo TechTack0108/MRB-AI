@@ -13,8 +13,8 @@ def generate_better_organization_patterns(file):
         better_version.append(org.title())
 
         # append lowercase, camelcase of each organization with "the" in front
-        better_version.append("the " + org.lower())
-        better_version.append("the " + org.title())
+        # better_version.append("the " + org.lower())
+        # better_version.append("the " + org.title())
 
         # append "(" and ") for each organization
         better_version.append("(" + org + ")")
