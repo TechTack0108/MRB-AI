@@ -1,4 +1,4 @@
-from PyPDF2 import PdfMerger
+from pypdf import PdfMerger
 import os
 import pytesseract
 

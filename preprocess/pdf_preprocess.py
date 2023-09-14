@@ -4,7 +4,7 @@ import pytesseract
 from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
 from searchablePDF import create_searchable_pdf
-from PyPDF2 import PdfMerger
+from pypdf import PdfMerger
 
 
 # from image_preprocess import noise_removal, enhance_image
