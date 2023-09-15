@@ -1,5 +1,4 @@
 from pypdf import PdfMerger
-import os
 import pytesseract
 
 
@@ -18,5 +17,5 @@ def create_searchable_pdf(image, output_path: str, page_num: int, merger: PdfMer
     merger.append(pdf_page_path)
     # os.remove(pdf_page_path)
 
-    print("Done!")
+    print("Done creating searchable!")
     return None

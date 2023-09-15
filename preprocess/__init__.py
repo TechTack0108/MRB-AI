@@ -1,5 +1,7 @@
 import os
 import sys
+import time
+import shutil
 
 from pdf_preprocess import preprocess_pdf
 
@@ -15,13 +17,17 @@ extracted_text_dir = current_dir + "/extracted_pdf/" + download_id
 searchable_pdf_dir = current_dir + "/searchable_pdf/" + download_id
 
 # # remove the directories if they exist
-# shutil.rmtree(processed_pdf_dir)
-# shutil.rmtree(extracted_text_dir)
+shutil.rmtree(processed_pdf_dir)
+shutil.rmtree(extracted_text_dir)
+shutil.rmtree(searchable_pdf_dir)
 
 # Create the directories if they don't exist
 os.makedirs(processed_pdf_dir, exist_ok=True)
 os.makedirs(extracted_text_dir, exist_ok=True)
 os.makedirs(searchable_pdf_dir, exist_ok=True)
+
+# mesasure the time
+start_time = time.time()
 
 for root, dirs, files in os.walk(raw_pdf_dir):
     for file in files:
@@ -35,3 +41,6 @@ for root, dirs, files in os.walk(raw_pdf_dir):
             preprocess_pdf(os.path.join(root, file),
                            processed_pdf_dir, extracted_text_dir, searchable_pdf_dir)
             print(f"Finished processing {file}")
+
+# Print the time taken
+print(f"Time taken: {time.time() - start_time} seconds")
