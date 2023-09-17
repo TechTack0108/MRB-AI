@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-import shutil
+# import shutil
 
 from pdf_preprocess import preprocess_pdf
 
@@ -17,9 +17,9 @@ extracted_text_dir = current_dir + "/extracted_pdf/" + download_id
 searchable_pdf_dir = current_dir + "/searchable_pdf/" + download_id
 
 # # remove the directories if they exist
-shutil.rmtree(processed_pdf_dir)
-shutil.rmtree(extracted_text_dir)
-shutil.rmtree(searchable_pdf_dir)
+# shutil.rmtree(processed_pdf_dir)
+# shutil.rmtree(extracted_text_dir)
+# shutil.rmtree(searchable_pdf_dir)
 
 # Create the directories if they don't exist
 os.makedirs(processed_pdf_dir, exist_ok=True)
