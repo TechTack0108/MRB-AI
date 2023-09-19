@@ -2,14 +2,14 @@ import cv2
 import os
 import pytesseract
 from concurrent.futures import ThreadPoolExecutor
+
 from pdf2image import convert_from_path
-from searchablePDF import create_searchable_pdf
 from pypdf import PdfMerger
 
 
 # from image_preprocess import noise_removal, enhance_image
 
-def preprocess_page(page_num, image, processed_dir_path, extracted_dir_path, merger):
+def preprocess_page(page_num, image, processed_dir_path, extracted_dir_path):
     try:
         print(f"--- Processing page {page_num + 1}... ---")
 
@@ -44,16 +44,6 @@ def preprocess_page(page_num, image, processed_dir_path, extracted_dir_path, mer
             text_file.close()
         print("Done saving extracted text!")
 
-        # convert the processed images to searchable PDF
-        pdf_page = pytesseract.image_to_pdf_or_hocr(image, extension='pdf', lang='vie+eng', config="--oem 3")
-        # Save the PDF page
-        pdf_page_path = f"/tmp/{page_num}.pdf"
-        with open(pdf_page_path, "wb") as f:
-            f.write(pdf_page)
-        # Append the PDF page to the merger
-        merger.append(pdf_page_path)
-        os.remove(pdf_page_path)
-        print("Done creating searchable!")
     except Exception as e:
         return print("Error in preprocess_page: ", e)
 
@@ -70,25 +60,39 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
     # os.makedirs(processed_dir_path_after, exist_ok=True)
     os.makedirs(extracted_dir_path, exist_ok=True)
 
-    # PDF merger
-    merger = PdfMerger()
-
     pages = convert_from_path(pdf_path, thread_count=4)
     print("Done converting to images!")
+    # PDF merger
+    merger = PdfMerger()
 
     # Set up a thread pool with a specified number of workers
     with ThreadPoolExecutor(max_workers=6) as executor:
         # Process each page using thread pool
         for page_num in range(len(pages)):
             image = pages[page_num]
+
+            # save the image
             # image_path = os.path.join(
             #     processed_dir_path_before, f"page_{page_num}.png")
             # image.save(image_path)  # Save the image as PNG
-            executor.submit(preprocess_page, page_num, image,
-                            "", extracted_dir_path, merger)
 
+            pdf_page = pytesseract.image_to_pdf_or_hocr(image, extension='pdf', lang='vie+eng', config="--oem 3")
             # convert the processed images to searchable PDF
-            searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
+            # Save the PDF page
+            pdf_page_path = f"/tmp/{page_num}.pdf"
+            with open(pdf_page_path, "wb") as f:
+                f.write(pdf_page)
+            # Append the PDF page to the merger
+            merger.append(pdf_page_path)
+            os.remove(pdf_page_path)
+
+            print("Done creating searchable!")
+
+            executor.submit(preprocess_page, page_num, image,
+                            "", extracted_dir_path)
+
+        # convert the processed images to searchable PDF
+        searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
 
         merger.write(searchable_pdf_dir_with_name)
         merger.close()
