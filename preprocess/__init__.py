@@ -8,7 +8,7 @@ from pdf_preprocess import preprocess_pdf
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
 
-download_id = sys.argv[1]
+download_id = "111"
 
 # Set up the directories
 raw_pdf_dir = mrb_ai_dir + "/files/" + download_id

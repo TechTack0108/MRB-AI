@@ -1,12 +1,12 @@
 import os
 import re
-import sys
 
 import spacy
 
 from file_utils import load_data_txt, save_data_txt
+from extract_subject import extract_subject
 
-download_id = sys.argv[1]
+download_id = "123"
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
@@ -14,7 +14,6 @@ mrb_ai_dir = os.path.dirname(current_dir)
 nlp_ref = spacy.load(current_dir + "/mrb_ref_no_ner_model")
 nlp_org = spacy.load(current_dir + "/mrb_organizations_ner_model")
 nlp_date = spacy.load(current_dir + "/mrb_dates_ner_model")
-nlp_subject = spacy.load(current_dir + "/mrb_subject_ner_model")
 
 
 def extract_ref_no(file_text, file_name):
@@ -92,16 +91,15 @@ def extract_orgs(file_text, file_name):
         print(e)
 
 
-def extract_subject(file_text):
-    doc_subject = nlp_subject(file_text)
-    subject = ""
+def extract_subject_file(file_text):
+    file_subject = extract_subject(file_text)
 
-    if len(doc_subject.ents) > 0:
-        for ent in doc_subject.ents:
-            subject = ent.text
-            break
+    print("file_subject: ", file_subject)
 
-    return subject
+    if file_subject:
+        return file_subject
+    else:
+        return ""
 
 
 def extract_date(file_text, file_name):
@@ -171,9 +169,9 @@ try:
                     save_data_txt(output_file_path_orgs, org + "\n")
 
                 # Extract the subject
-                # subject = extract_subject(file_text)
-                # if subject:
-                #     save_data_txt(output_file_path_subject, subject)
+                subject = extract_subject_file(file_text)
+                if subject:
+                    save_data_txt(output_file_path_subject, subject)
 
                 print("Finished processing ", file_name)
 

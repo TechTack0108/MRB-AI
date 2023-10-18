@@ -88,8 +88,8 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
 
             print("Done creating searchable!")
 
-            executor.submit(preprocess_page, page_num, image,
-                            "", extracted_dir_path)
+            # executor.submit(preprocess_page, page_num, image,
+            #                 "", extracted_dir_path)
 
         # convert the processed images to searchable PDF
         searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
