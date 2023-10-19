@@ -1,12 +1,13 @@
 import os
 import re
+import sys
 
 import spacy
 
 from file_utils import load_data_txt, save_data_txt
 from extract_subject import extract_subject
 
-download_id = "123"
+download_id = sys.argv[1]
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 mrb_ai_dir = os.path.dirname(current_dir)
