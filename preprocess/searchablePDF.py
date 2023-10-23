@@ -1,5 +1,6 @@
 import os
 import pytesseract
+import sys
 from pdf2image import convert_from_path
 from pypdf import PdfMerger
 
@@ -8,9 +9,9 @@ def create_searchable_pdf():
     """Generate a searchable PDF from document images.
     """
     try:
-        file_name = "DLM-MLT-00001-22-EV.pdf"
+        file_name = sys.argv[1]
         merger = PdfMerger()
-        current_dir = os.getcwd()
+        current_dir = os.getcwd() + "/classes/MRB-AI/preprocess"
         input_path = os.path.join(current_dir, "unprocessed_files", file_name).replace("\\", "/")
         pages = convert_from_path(input_path, thread_count=4)
         print("Processing pages: " + str(len(pages)))
@@ -33,9 +34,6 @@ def create_searchable_pdf():
 
             print("Done creating searchable for page: " + str(page_num))
 
-        if not os.path.exists(os.path.join(current_dir, "ocr")):
-            os.makedirs(os.path.join(current_dir, "ocr"), exist_ok=True)
-
         # convert the processed images to searchable PDF
         searchable_pdf_dir_with_name = os.path.join(current_dir, "ocr", file_name + ".pdf").replace("\\", "/")
 
@@ -44,3 +42,7 @@ def create_searchable_pdf():
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+
+
+if __name__ == '__main__':
+    create_searchable_pdf()
