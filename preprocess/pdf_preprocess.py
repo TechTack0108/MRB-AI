@@ -6,6 +6,10 @@ from concurrent.futures import ThreadPoolExecutor
 from pdf2image import convert_from_path
 from pypdf import PdfMerger
 
+from PIL import Image
+
+Image.MAX_IMAGE_PIXELS = None
+
 
 # from image_preprocess import noise_removal, enhance_image
 
