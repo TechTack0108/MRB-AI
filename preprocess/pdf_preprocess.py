@@ -10,7 +10,6 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 
-
 # from image_preprocess import noise_removal, enhance_image
 
 def preprocess_page(page_num, image, processed_dir_path, extracted_dir_path):
