@@ -4,26 +4,24 @@ import numpy as np
 
 def noise_removal(image):
     try:
-        # Check if the image is already in grayscale
-        if len(image.shape) > 2 and image.shape[2] == 3:
-            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        # Load the image
+        image = cv2.imread(image)
 
-        # Apply noise removal techniques
-        kernel = np.ones((1, 1), np.uint8)
-        dilated_image = cv2.dilate(image, kernel, iterations=1)
-        eroded_image = cv2.erode(dilated_image, kernel, iterations=1)
-        opened_image = cv2.morphologyEx(eroded_image, cv2.MORPH_OPEN, kernel)
-        denoised_image = cv2.medianBlur(opened_image, 3)
+        # Convert to grayscale
+        # gray_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        #
+        # # Resize to 1191x2000 pixels
+        # resized_img = cv2.resize(gray_img, (1191, 2000))
 
-        # Binarize the image
-        thresh, im_bw = cv2.threshold(
-            denoised_image, 210, 230, cv2.THRESH_BINARY)
+        # Apply unsharp mask
+        blurred_img = cv2.GaussianBlur(image, (0, 0), 6.8)
+        unsharp_img = cv2.addWeighted(image, 1.0 + 2.69, blurred_img, -0.69, 0)
 
         print("Noise removal done.")
         # Thicker the text
-        im_bw = cv2.erode(im_bw, kernel, iterations=1)
+        # im_bw = cv2.erode(im_bw, kernel, iterations=1)
 
-        return im_bw
+        return unsharp_img
     except Exception as e:
         return print("Error in noise_removal: ", e)
 
@@ -41,3 +39,20 @@ def enhance_image(image):
         return contrast_enhanced_image
     except Exception as e:
         return print("Error in enhanced_image: ", e)
+
+
+def downscale_image(image):
+    # Convert the PIL Image to a numpy array
+    image_np = np.array(image)
+
+    # downscale the image to a value less than 178956970
+    total_pixels = image_np.shape[0] * image_np.shape[1]
+
+    scale_percent = 178956970 / total_pixels
+    width = int(image_np.shape[1] * scale_percent)
+    height = int(image_np.shape[0] * scale_percent)
+    dim = (width, height)
+
+    # resize image
+    resized_image = cv2.resize(image_np, dim, interpolation=cv2.INTER_AREA)
+    return resized_image
