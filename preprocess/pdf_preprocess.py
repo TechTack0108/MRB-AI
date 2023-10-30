@@ -72,13 +72,13 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
     os.makedirs(processed_dir_path_after, exist_ok=True)
     os.makedirs(extracted_dir_path, exist_ok=True)
 
-    pages = convert_from_path(pdf_path, thread_count=8, dpi=150, grayscale=True, hide_annotations=True)
+    pages = convert_from_path(pdf_path, thread_count=4, dpi=150, grayscale=True, hide_annotations=True)
     print("Done converting to images!")
     # PDF merger
     merger = PdfMerger()
 
     # Set up a thread pool with a specified number of workers
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=4) as executor:
         try:
             # Process each page using thread pool
             pdf_page_paths = []
