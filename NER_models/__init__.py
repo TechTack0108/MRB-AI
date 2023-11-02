@@ -1,11 +1,10 @@
 import os
 import re
+import spacy
 import sys
 
-import spacy
-
-from file_utils import load_data_txt, save_data_txt
 from extract_subject import extract_subject
+from file_utils import load_data_txt, save_data_txt
 
 download_id = sys.argv[1]
 
