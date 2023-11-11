@@ -43,17 +43,17 @@ def preprocess_page(page_num, image, processed_dir_path, extracted_dir_path):
             print("Done saving extracted text!")
 
         # convert to searchable PDF
-        # pdf_page = pytesseract.image_to_pdf_or_hocr(image, extension='pdf', lang='vie+eng',
-        #                                             config="--oem 3 --psm 6")
-        # # convert the processed images to searchable PDF
-        # # Save the PDF page
-        # pdf_page_path = f"/tmp/{page_num}.pdf"
-        # with open(pdf_page_path, "wb") as f:
-        #     f.write(pdf_page)
-        #
-        # print("Done creating searchable PDF page!")
+        pdf_page = pytesseract.image_to_pdf_or_hocr(image, extension='pdf', lang='vie+eng',
+                                                    config="--oem 3 --psm 6")
+        # convert the processed images to searchable PDF
+        # Save the PDF page
+        pdf_page_path = f"/tmp/{page_num}.pdf"
+        with open(pdf_page_path, "wb") as f:
+            f.write(pdf_page)
 
-        # return pdf_page_path
+        print("Done creating searchable PDF page!")
+
+        return pdf_page_path
 
     except Exception as e:
         print(f"Error processing page {page_num}: {e}")
@@ -101,19 +101,19 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
                 pdf_page_paths.append(future)
 
             # Wait for all PDF pages to be generated
-            # pdf_page_paths = [future.result() for future in pdf_page_paths if future.result() is not None]
+            pdf_page_paths = [future.result() for future in pdf_page_paths if future.result() is not None]
 
             # PDF merger
-            # merger = PdfMerger()
-            # for pdf_page_path in pdf_page_paths:
-            #     # Append the PDF page to the merger
-            #     merger.append(pdf_page_path)
-            #     os.remove(pdf_page_path)
-            #
-            # # convert the processed images to searchable PDF
-            # searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
-            #
-            # merger.write(searchable_pdf_dir_with_name)
-            # merger.close()
+            merger = PdfMerger()
+            for pdf_page_path in pdf_page_paths:
+                # Append the PDF page to the merger
+                merger.append(pdf_page_path)
+                os.remove(pdf_page_path)
+
+            # convert the processed images to searchable PDF
+            searchable_pdf_dir_with_name = os.path.join(searchable_pdf_dir, file_name + ".pdf").replace("\\", "/")
+
+            merger.write(searchable_pdf_dir_with_name)
+            merger.close()
         except Exception as e:
             print("Error in preprocess_pdf: ", e)
