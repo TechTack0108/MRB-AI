@@ -11,11 +11,16 @@ Image.MAX_IMAGE_PIXELS = None
 # Function to get CPU usage percentage
 
 # Set the maximum allowed CPU usage percentage
-max_cpu_usage = 75  # Adjust this value as needed
+max_cpu_usage = 80  # Adjust this value as needed
+max_ram_usage = 90
 
 
 def get_cpu_usage():
     return psutil.cpu_percent(interval=1)
+
+
+def get_ram_usage():
+    return psutil.virtual_memory().percent
 
 
 width, height = 800, 1200
@@ -92,6 +97,13 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
             for batch_start in range(0, total_pages, batch_size):
                 batch_end = min(batch_start + batch_size, total_pages)
                 batch_pages = pages[batch_start:batch_end]
+
+                # Check RAM usage before processing each batch
+                current_ram_usage = get_ram_usage()
+                print(f"Current RAM usage: {current_ram_usage}%")
+                if current_ram_usage >= max_ram_usage:
+                    print(f"RAM usage reached {current_ram_usage}%, reducing batch size for the current batch.")
+                    batch_size = max(1, batch_size // 2)  # Reduce batch size by half for the current batch
 
                 # Process each page in the batch using thread pool
                 batch_futures = []
