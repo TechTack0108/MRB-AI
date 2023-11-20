@@ -170,12 +170,12 @@ try:
 
                 # Extract the subject
                 subject = extract_subject_file(file_text)
-                if subject:
-                    save_data_txt(output_file_path_subject, subject)
+                save_data_txt(output_file_path_subject, subject)
 
                 print("Finished processing ", file_name)
 
                 count_files += 1
+
 except Exception as e:
     print("File: ", file_name)
     print("Error: ", e)

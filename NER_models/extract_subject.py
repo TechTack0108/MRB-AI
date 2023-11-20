@@ -2,14 +2,12 @@ import re
 
 
 def extract_subject(text):
-    # Define a pattern to match the subject
-    pattern = r"(?:Về việc|Ve việc|ve viec|Subject:|Chủ đề|chu de|Ve viec|Chu de:)\s*(.*?)(?=\n\w+:|\n\n|\n\d+\.)"
+    pattern = r"(?:Về việc|Ve việc|Viv|ve viec|Subject|subject|Chủ đề|chu de|Ve viec|Chu de|VỀ vige)\s*:\s*([^:\n]+.*?)(?=\n\w+:|$)(?![^\n]*\n[^\w:]+)"
 
-    # Search for the pattern in the text
     match = re.search(pattern, text, re.IGNORECASE | re.DOTALL | re.UNICODE)
 
     if match:
-        subject = match.group(1).strip().lstrip(": ")
+        subject = match.group(1).strip()
         return subject.replace('\n', ' ')
     else:
         return None
