@@ -81,7 +81,7 @@ def preprocess_pdf(pdf_path, processed_pdf_dir, extracted_text_dir, searchable_p
         os.makedirs(extracted_dir_path, exist_ok=True)
 
         # Convert PDF pages to images
-        pages = convert_from_path(pdf_path, thread_count=4, dpi=150, grayscale=True, hide_annotations=True)
+        pages = convert_from_path(pdf_path, thread_count=4, dpi=150, hide_annotations=True)
         print("Done converting to images!")
 
         # Get the total number of pages in the PDF
